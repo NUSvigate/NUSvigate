@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>794910415753-v63m7iqupv0if9dipji1n8tfv6qf0757.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.794910415753-v63m7iqupv0if9dipji1n8tfv6qf0757</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA12b413Mimq3REtq2Xt3i3n7v9-vIWGEA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>794910415753</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nus.NUSvigate</string>
+	<key>PROJECT_ID</key>
+	<string>nusvigate</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nusvigate.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:794910415753:ios:1abf3ce070b9e5f31d5f58</string>
+	<key>DATABASE_URL</key>
+	<string>https://nusvigate.firebaseio.com</string>
+</dict>
+</plist>

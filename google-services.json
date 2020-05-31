@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "794910415753",
+    "firebase_url": "https://nusvigate.firebaseio.com",
+    "project_id": "nusvigate",
+    "storage_bucket": "nusvigate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:794910415753:android:df4e6bbce9e001101d5f58",
+        "android_client_info": {
+          "package_name": "com.nus.nusvigate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "794910415753-gjq1qvr46ai0hevjpbgm25bi61hm5scu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrpFj3ewl-PhB41RbHtMvvueeEUc6r-bQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "794910415753-gjq1qvr46ai0hevjpbgm25bi61hm5scu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
