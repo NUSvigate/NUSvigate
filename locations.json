@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Kent Ridge MRT station",
+    "address": "301 South Buona Vista Road, 118177",
+    "coords": {
+        "latitude": 1.2936,
+        "longitude": 103.7845
+    },
+    "image_url": "https://www.google.com/maps/uv?hl=en&pb=!1s0x31da1a52319edb39%3A0x9a36ad159e134e84!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNhenqxgQMIRPSucCA_2EXwDUM8xad2VeWq6L-M%3Dw240-h320-k-no!5skent%20ridge%20mrt%20station%20latitude%20and%20longitude%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipMqwFMN2AdPTj8WFru9cPQvCKvo10Ph2Dh50kNJ&sa=X&ved=2ahUKEwiPwq2qheDpAhX2zzgGHT4AAsIQoiowDXoECBgQCQ"
+  },
+  {
+    "name": "NUS School of Computing",
+    "address": "NUS School of Computing, COM1, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
+  },
+  {
+    "name": "NUS Utown",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.3055,
+      "longitude": 103.7731
+    },
+    "image_url": "https://www.google.com/search?q=nus+utown&hl=en&sxsrf=ALeKk03rOGx8QUxV965aMBoI-060mT04xQ:1590994976183&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd95OThuDpAhVGbSsKHfhKB7UQ_AUoAnoECA0QBA&biw=1440&bih=821#imgrc=DZReS8TsqWg_WM"
+  }
+
+]
