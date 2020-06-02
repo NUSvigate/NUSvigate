@@ -1,125 +1,112 @@
-import React, { Component } from 'react';
-import { NativeEventEmitter, NativeModules } from 'react-native';
-import { StyleSheet, View, Text, Button, Image, Alert, Platform } from 'react-native';
-import MapView, { PROVIDER_GOOGLE, Marker, Callout, Polygon, Circle } from 'react-native-maps';
-import Geolocation from 'react-native-geolocation-service';
-import * as Permissions from 'expo';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import MapView from 'react-native-maps';
+import * as Permissions from 'expo-permissions';
+import Polyline from '@mapbox/polyline'
 
-export default class MapContainer extends Component {
+const locations = require('../locations.json');
+
+export default class MapContainer extends React.Component {
 
     state = {
-
         latitude: null,
         longitude: null,
-        coordinates: [
-            { name: '1', latitude: 37.802529, longitude: -122.4351431 },
-            { name: '2', latitude: 37.7896386, longitude: -122.421646 },
-            { name: '3', latitude: 37.7665248, longitude: -122.4161628},
-            { name: '4', latitude: 37.7734153, longitude: -122.4577787 },
-            { name: '5', latitude: 37.8025259, longitude: -122.4351431}
-        ]
+        locations: locations
     }
 
-    componentDidMount() {
-        this.requestLocationPermission();
-    }
-
-
-    showWelcomeMessage = () => {
-        Alert.alert(
-            'Welcome to San Francisco',
-            'The food is amazing',
-            [
-                {
-                    text: 'Cancel',
-                    style: 'cancel'
-                },
-                {
-                    text: 'Ok'
-                }
-            ]
-        )
-    }
-
-    requestLocationPermission = async () => {
+    async componentDidMount() {
         const { status } = await Permissions.getAsync(Permissions.LOCATION);
 
-        if (status === 'granted') {
-            this.locateCurrentPosition();
-        } else {
+        if ( status !== 'granted' ) {
             const response = await Permissions.askAsync(Permissions.LOCATION);
+        }
+        navigator.geolocation.getCurrentPosition(
+            ({ coords: { latitude, longitude } }) => this.setState({ latitude, longitude }, this.mergeCoords),
+            (error) => console.log('Error:', error)
+        )
+
+        const { locations: [ sampleLocation ]} = this.state
+
+        this.setState({
+            desLatitude: sampleLocation.coords.latitude,
+            desLongitude: sampleLocation.coords.longitude
+        }, this.mergeCoords)
+    }
+
+    mergeCoords = () => {
+        const {
+            latitude,
+            longitude,
+            desLatitude,
+            desLongitude
+        } = this.state
+
+        const hasStartAndEnd = latitude !== null && desLatitude !== null
+
+        if (hasStartAndEnd) {
+            const concatStart = `${latitude},${longitude}`
+            const concatEnd = `${desLatitude},${desLongitude}`
+            this.getDirections(concatStart, concatEnd)
         }
     }
 
-    locateCurrentPosition = () => {
-        Geolocation.getCurrentPosition(
-            position => {
-                console.log(JSON.stringify(position));
-            }
-        )
+    async getDirections(startLoc, desLoc) {
+        try {
+            const resp = await fetch (`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyCQ4-BaArdW5sd6bcStHnNNtZjnqUyBAEI`)
+            const respJson = await resp.json();
+            console.log(JSON.stringify(respJson));
+            const points = Polyline.decode(respJson.routes[0].overview_polyline.points)
+            const coords = points.map(point => {
+                return {
+                    latitude: point[0],
+                    longitude: point[1]
+                }
+            })
+            this.setState({ coords })
+        } catch (error) {
+            console.log('Error: ', error)
+        }
     }
 
     render() {
-        return(
-            <MapView
-                provider={ PROVIDER_GOOGLE }
-                showsUserLocation={true}
-                style={styles.map}
-                initialRegion= {{
-                    latitude: 37.78825,
-                    longitude: -122.4324,
-                    latitudeDelta: 0.09,
-                    longitudeDelta: 0.035
-                }}>
 
-                <Polygon
-                    coordinates={this.state.coordinates}
-                    fillColor={'rgba(100, 100, 200, 0.6)'}
-                />
+        const { latitude, longitude, coords } = this.state;
 
-                <Circle
-                    center={{ latitude: 37.8025259, longitude: -122.4351431 }}
-                    radius={500}
-                    fillColor={'rgba(100,100,100,0.5)'}
-                />
-
-                <Marker
-                    coordinate={{ latitude: 37.7825259, longitude: -122.44 }}
-                    image={require('../assets/Main.png')}
+        if (latitude) {
+            return (
+                <MapView
+                    showsUserLocation
+                    style={{ flex: 1 }}
+                    initialRegion={{
+                        latitude,
+                        longitude,
+                        latitudeDelta: 0.0922,
+                        longitudeDelta: 0.0421
+                    }}
                 >
+                    <MapView.Polyline
+                        strokeWidth={2}
+                        strokeColor='red'
+                        coordinates={coords}
+                    />
+                </MapView>
+            )
+        }
 
-                    <Callout onPress={this.showWelcomeMessage}>
-
-                        <Image source={require('../assets/Main.png')}/>
-                        <Text>An Interesting City</Text>
-
-                    </Callout>
-                </Marker>
-
-                {
-                    this.state.coordinates.map(marker => (
-                        <Marker
-                            key={marker.name}
-                            coordinate={{latitude: marker.latitude, longitude: marker.longitude}}
-                        >
-                            <Callout>
-                                <Image
-                                    style={{width: 50, height: 50}}
-                                    source={require('../assets/Main3.png')}
-                                />
-                                <Text>{marker.name}</Text>
-                            </Callout>
-
-                        </Marker>
-                    ))
-                }
-            </MapView>
-        );
+        return (
+            <View styles={{
+                flex: 1,
+                justifyContent: 'center',
+                alignItems: 'center'
+            }}>
+                <Text>We need your permission!</Text>
+            </View>
+        )
     }
-};
+}
 
 const styles = StyleSheet.create({
-  map: {
-    ...StyleSheet.absoluteFillObject
-  },
+    container: {
+        flex: 1
+    }
 })

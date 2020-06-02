@@ -2,49 +2,24 @@ import React from 'react';
 import { Image, TextInput, Text, StyleSheet, KeyboardAvoidingView, ActivityIndicator } from 'react-native';
 import LoginButton from '../component/LoginButton';
 import firebaseDb from '../firebaseDb';
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { updateEmail, updatePassword, login, getUser } from '../actions/user'
 
 class LoginContainer extends React.Component {
-    state = {
-        name: '',
-        email: '',
-        password: '',
-        users: null,
-        isLoading: true,
-        loginSuccess: false
-    }
 
-    handleUpdateName = name => this.setState({name});
-
-    handleUpdateEmail = email => this.setState({email});
-
-    handleUpdatePassword = password => this.setState({password});
-
-    componentDidMount() {
-        firebaseDb.firestore().collection('users').get().then(querySnapshot => {
-            const results = [];
-            querySnapshot.docs.map(documentSnapshot => results.push({
-            ...documentSnapshot.data(),
-            name: documentSnapshot.name,
-            email: documentSnapshot.email,
-            password: documentSnapshot.password }))
-            this.setState({isLoading: false, users: results})
-            }).catch(err => console.error(err))
-    }
-
-    handleUpdateLoginSuccess = users => {
-        for (i = 0; i < this.state.users.length; i++) {
-            if (this.state.name === this.state.users[i].name
-            && this.state.email === this.state.users[i].email
-            && this.state.password === this.state.users[i].password) {
-                this.setState({loginSuccess: true});
+    componentDidMount = () => {
+        firebaseDb.auth().onAuthStateChanged(user => {
+            if (user) {
+                this.props.getUser(user.uid)
+                if (this.props.user !== null) {
+                    this.prop.navigation.navigate('Main Menu')
+                }
             }
-        }
+        })
     }
 
     render() {
-        const { name, email, password, users, isLoading, loginSuccess } = this.state;
-        if (isLoading) return <ActivityIndicator/>
-
         return (
             <KeyboardAvoidingView
                 behavior={(Platform.OS === 'ios')? "padding" : null}
@@ -56,35 +31,27 @@ class LoginContainer extends React.Component {
 
                 <TextInput
                     style={styles.textInput}
-                    placeholder="Name"
-                    onChangeText={this.handleUpdateName}
-                    value={name}
-                />
-
-                <TextInput
-                    style={styles.textInput}
                     placeholder="Email"
-                    onChangeText={this.handleUpdateEmail}
-                    value={email}
+                    onChangeText={ email => this.props.updateEmail(email) }
+                    value={ this.props.user.email }
+                    autoCapitalize='none'
                 />
 
                 <TextInput
+                    secureTextEntry
                     style={styles.textInput}
                     placeholder="Password"
-                    onChangeText={this.handleUpdatePassword}
-                    value={password}
+                    onChangeText={ password => this.props.updatePassword(password) }
+                    value={ this.props.user.password }
+                    autoCapitalize='none'
                 />
 
                 <LoginButton
                     style={styles.loginButton}
                     onPress= {() => {
-                        this.handleUpdateLoginSuccess();
+                        this.props.login();
                     }}
                 />
-
-                    { loginSuccess && (() => { this.props.navigation.navigate('Main Menu'); })}
-
-                    { !loginSuccess && (<Text style={styles.text}> Login failed. Please check your details again.</Text>) }
 
             </KeyboardAvoidingView>
         )
@@ -122,4 +89,17 @@ const styles = StyleSheet.create({
     }
 })
 
-export default LoginContainer
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({ updateEmail, updatePassword, login, getUser }, dispatch)
+}
+
+const mapStateToProps = state => {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(LoginContainer)

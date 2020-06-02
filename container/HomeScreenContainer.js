@@ -2,7 +2,6 @@ import React from 'react'
 import { View, Image, StyleSheet, Dimensions } from 'react-native'
 import LoginButton from '../component/LoginButton';
 import CreateAccountButton from '../component/CreateAccountButton';
-// import firebaseDb from '../firebaseDb'
 
 class HomeScreenContainer extends React.Component {
 

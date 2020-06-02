@@ -1,12 +1,18 @@
 import React from 'react';
-import { SafeAreaView, Image, StyleSheet, Dimensions, View, Text } from 'react-native';
+import { SafeAreaView, Image, StyleSheet, Dimensions, View, Text, Button } from 'react-native';
 import GPSMapButton from '../component/GPSMapButton';
 import LostFoundButton from '../component/LostFoundButton';
 import ServicesInfoButton from '../component/ServicesInfoButton';
 import FAQButton from '../component/FAQButton';
-// import firebaseDb from '../firebaseDb'
+import { connect } from 'react-redux';
+import firebaseDb from '../firebaseDb'
 
 class MainMenuContainer extends React.Component {
+
+    handleSignOut = () => {
+        firebaseDb.auth().signOut()
+        this.props.navigation.navigate('Login')
+    }
 
     render() {
         return (
@@ -14,14 +20,16 @@ class MainMenuContainer extends React.Component {
 
                 <View style={styles.profileContainer}>
                     <Text style={styles.profileText}>
-                        Name: username {"\n"}
-                        Email: e*******@u.nus.edu
+                        Email: {this.props.user.email}
                     </Text>
 
                     <Image
                         style={styles.profileImage}
                         source={require('../assets/Main.png')}
                     />
+
+                    <Button title='Logout' onPress={this.handleSignOut} />
+
                 </View>
 
                 <SafeAreaView style={styles.buttonsContainer}>
@@ -123,4 +131,10 @@ const styles = StyleSheet.create({
     }
 })
 
-export default MainMenuContainer;
+const mapStateToProps = state => {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(mapStateToProps)(MainMenuContainer)

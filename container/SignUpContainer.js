@@ -2,88 +2,61 @@ import React from 'react';
 import { KeyboardAvoidingView, Image, TextInput, Text, StyleSheet, secureTextEntry, Alert } from 'react-native';
 import SignUpButton from '../component/SignUpButton';
 import firebaseDb from '../firebaseDb';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { updateEmail, updatePassword, signup } from '../actions/user';
 
 class SignUpContainer extends React.Component {
-  state = {
-    name: '',
-    email: '',
-    password: '',
-    signUpSuccess: false
-  }
 
-  handleUpdateName = name => this.setState({name})
+    handleCreateUser = () => {
+        this.props.signup()
+        this.props.navigation.navigate('Main Menu')
+    }
 
-  handleUpdateEmail = email => this.setState({email})
+     render() {
+        return (
+            <KeyboardAvoidingView
+                style={styles.container}
+                behavior={(Platform.OS === 'ios')? "padding" : null}
+            >
+                <Image
+                    style={styles.image}
+                    source={require('../assets/in.png')}
+                />
 
-  handleUpdatePassword = password => this.setState({password})
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Email"
+                    onChangeText={ email => this.props.updateEmail(email) }
+                    value={ this.props.user.email }
+                    autoCapitalize='none'
+                />
 
-  handleCreateUser = () => firebaseDb.firestore()
-  .collection('users')
-  .add({
-    name: this.state.name,
-    email: this.state.email,
-    password: this.state.password,
-  }).then(() => this.setState({
-    name: '',
-    email: '',
-    password: '',
-    signUpSuccess: true
-  })).catch(err => console.error(err))
+                <TextInput
+                    secureTextEntry
+                    style={styles.textInput}
+                    placeholder="Password"
+                    onChangeText={ password => this.props.updatePassword(password) }
+                    value={ this.props.user.password }
+                    autoCapitalize='none'
+                />
 
-  render() {
-      const {name, email, password, signUpSuccess} = this.state;
+                <SignUpButton
+                    style={styles.button}
+                    onPress={() => {
+                        this.handleCreateUser();
+                        Alert.alert('Sign Up Successful!');
+                        }
+                    }>
+                    Sign Up
+                </SignUpButton>
 
-      return (
-          <KeyboardAvoidingView
-              style={styles.container}
-              behavior={(Platform.OS === 'ios')? "padding" : null}
-          >
-              <Image
-                  style={styles.image}
-                  source={require('../assets/in.png')}
-              />
-
-              <TextInput
-                  style={styles.textInput}
-                  placeholder="Name"
-                  onChangeText={this.handleUpdateName}
-                  value={name}
-              />
-
-              <TextInput
-                  style={styles.textInput}
-                  placeholder="Email"
-                  onChangeText={this.handleUpdateEmail}
-                  value={email}
-              />
-
-              <TextInput
-              secureTextEntry
-                  style={styles.textInput}
-                  placeholder="Password"
-                  onChangeText={this.handleUpdatePassword}
-                  value={password}
-              />
-
-              <SignUpButton
-                  style={styles.button}
-                  onPress={() => {
-                      if (name.length && email.length && password.length) {
-                          this.handleCreateUser();
-                          Alert.alert('Sign Up Successful!');
-                          this.props.navigation.navigate('Main Menu');
-                      }
-                  }}>
-                  Sign Up
-              </SignUpButton>
-
-              {
-                  signUpSuccess ? null :
-                  (<Text style={styles.warningText}> Please enter all fields. </Text>)
-              }
-          </KeyboardAvoidingView>
-      )
-  }
+                {
+                    (<Text style={styles.warningText}> Please enter all fields. </Text>)
+                }
+            </KeyboardAvoidingView>
+        )
+     }
 }
 
 const styles = StyleSheet.create({
@@ -121,4 +94,17 @@ const styles = StyleSheet.create({
     }
 })
 
-export default SignUpContainer
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({ updateEmail, updatePassword, signup }, dispatch)
+}
+
+const mapStateToProps = state => {
+    return {
+        user: state.user
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(SignUpContainer)
