@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "794910415753",
-    "firebase_url": "https://nusvigate.firebaseio.com",
-    "project_id": "nusvigate",
-    "storage_bucket": "nusvigate.appspot.com"
+    "project_number": "797424671267",
+    "firebase_url": "https://nusvigate-1fffe.firebaseio.com",
+    "project_id": "nusvigate-1fffe",
+    "storage_bucket": "nusvigate-1fffe.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:794910415753:android:df4e6bbce9e001101d5f58",
+        "mobilesdk_app_id": "1:797424671267:android:2c86eafc8bdb9d0c4d2f96",
         "android_client_info": {
-          "package_name": "com.nus.nusvigate"
+          "package_name": "com.nus.NUSvigate"
         }
       },
       "oauth_client": [
         {
-          "client_id": "794910415753-gjq1qvr46ai0hevjpbgm25bi61hm5scu.apps.googleusercontent.com",
+          "client_id": "797424671267-emlh06aq4eivat6499g2t5qrabbugeqn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBrpFj3ewl-PhB41RbHtMvvueeEUc6r-bQ"
+          "current_key": "AIzaSyDvd12cvkTcCij2gp0mxq3sJJrINZW6Ni0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "794910415753-gjq1qvr46ai0hevjpbgm25bi61hm5scu.apps.googleusercontent.com",
+              "client_id": "797424671267-emlh06aq4eivat6499g2t5qrabbugeqn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
