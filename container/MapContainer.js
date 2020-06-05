@@ -4,6 +4,8 @@ import MapView from 'react-native-maps';
 import * as Permissions from 'expo-permissions';
 import Polyline from '@mapbox/polyline'
 
+import { Marker } from 'react-native-maps'
+
 const locations = require('../locations.json');
 
 export default class MapContainer extends React.Component {
@@ -52,7 +54,7 @@ export default class MapContainer extends React.Component {
 
     async getDirections(startLoc, desLoc) {
         try {
-            const resp = await fetch (`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyCQ4-BaArdW5sd6bcStHnNNtZjnqUyBAEI`)
+            const resp = await fetch (`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyDvMevOCENhN4DLzaT_bn60NqB2bOnLau0`)
             const respJson = await resp.json();
             console.log(JSON.stringify(respJson));
             const points = Polyline.decode(respJson.routes[0].overview_polyline.points)
@@ -66,6 +68,37 @@ export default class MapContainer extends React.Component {
         } catch (error) {
             console.log('Error: ', error)
         }
+    }
+
+//    onMarkerPress = location => () => {
+//       const { coords: {latitude, longitude} } = location
+//       this.setState({
+//           destination: location,
+//           desLatitude: latitude,
+//           desLongitude: longitude
+//           }, this.mergeCoords)
+//    }
+
+    renderMarkers = () => {
+    const { locations } = this.state
+    return (
+        <View>
+          {
+            locations.map((location, idx) => {
+              const {
+                coords: {latitude, longitude}
+              } = location
+              return (
+                <Marker
+                  key = {idx}
+                  coordinate ={{ latitude, longitude}}
+//                  onPress={this.onMarkerPress(location)}
+                  />
+               )
+            })
+           }
+         </View>
+        )
     }
 
     render() {
@@ -84,6 +117,7 @@ export default class MapContainer extends React.Component {
                         longitudeDelta: 0.0421
                     }}
                 >
+                {this.renderMarkers()}
                     <MapView.Polyline
                         strokeWidth={2}
                         strokeColor='red'
