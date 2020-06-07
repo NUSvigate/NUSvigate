@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     },
     buttonText: {
         textAlign: 'center',

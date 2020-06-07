@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     },
     text: {
         textAlign: 'center',

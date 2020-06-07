@@ -19,7 +19,7 @@ const FAQButton = props => (
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-around'
     },
     text: {
         textAlign: 'center',
