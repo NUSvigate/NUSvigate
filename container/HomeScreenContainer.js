@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     },
     loginButton: {
         marginVertical: 20,
-        paddingBottom: 50
+        paddingBottom: 50,
     },
     createAccountButton: {
         marginVertical: 50

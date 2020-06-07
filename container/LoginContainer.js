@@ -4,7 +4,7 @@ import LoginButton from '../component/LoginButton';
 import firebaseDb from '../firebaseDb';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { updateEmail, updatePassword, login, getUser } from '../actions/user'
+import { updateEmail, updatePassword, updateName, login, getUser } from '../actions/user'
 
 class LoginContainer extends React.Component {
 
@@ -13,7 +13,7 @@ class LoginContainer extends React.Component {
             if (user) {
                 this.props.getUser(user.uid)
                 if (this.props.user !== null) {
-                    this.prop.navigation.navigate('Main Menu')
+                    this.props.navigation.navigate('Main Menu')
                 }
             }
         })
@@ -27,6 +27,13 @@ class LoginContainer extends React.Component {
                 <Image
                     style={styles.image}
                     source={require('../assets/in.png')}
+                />
+
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Name"
+                    onChangeText={ name => this.props.updateName(name) }
+                    value={ this.props.user.name }
                 />
 
                 <TextInput
@@ -90,7 +97,7 @@ const styles = StyleSheet.create({
 })
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({ updateEmail, updatePassword, login, getUser }, dispatch)
+    return bindActionCreators({ updateEmail, updatePassword, updateName, login, getUser }, dispatch)
 }
 
 const mapStateToProps = state => {

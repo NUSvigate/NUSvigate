@@ -4,6 +4,9 @@ import GPSMapButton from '../component/GPSMapButton';
 import LostFoundButton from '../component/LostFoundButton';
 import ServicesInfoButton from '../component/ServicesInfoButton';
 import FAQButton from '../component/FAQButton';
+import EventOneButton from '../component/EventOneButton';
+import EventTwoButton from '../component/EventTwoButton';
+
 import { connect } from 'react-redux';
 import firebaseDb from '../firebaseDb'
 
@@ -20,7 +23,8 @@ class MainMenuContainer extends React.Component {
 
                 <View style={styles.profileContainer}>
                     <Text style={styles.profileText}>
-                        Email: {this.props.user.email}
+                        Name: { this.props.user.name } {"\n"}
+                        Email: { this.props.user.email }
                     </Text>
 
                     <Image
@@ -46,7 +50,7 @@ class MainMenuContainer extends React.Component {
 
                     <ServicesInfoButton
                         style={styles.button}
-                        onPress={() => {}}>
+                        onPress={() => {this.props.navigation.navigate('ServicesInformation')}}>
                     </ServicesInfoButton>
 
                     <FAQButton
@@ -56,13 +60,19 @@ class MainMenuContainer extends React.Component {
 
                 </SafeAreaView>
 
-                <View style={styles.eventsContainer}>
+                <SafeAreaView style={styles.textContainer}>
+                    <Text style = {styles.text}> Latest Event/Updates: </Text>
+                </SafeAreaView>
 
-                </View>
+                <EventOneButton
+                    style={styles.eventsContainer}
+                    onPress = {() => {this.props.navigation.navigate('Event One')}}
+                />
 
-                <View style={styles.eventsContainer}>
-
-                </View>
+                <EventTwoButton
+                    style={styles.eventsContainer}
+                    onPress = {() => {this.props.navigation.navigate('Event Two')}}
+                />
 
             </SafeAreaView>
         )
@@ -95,18 +105,21 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         alignItems: 'center',
         backgroundColor: '#b9d6eb',
+        marginBottom: windowHeight / 40
+    },
+    textContainer: {
+        width: windowWidth / 6 * 5,
+        height: windowHeight / 40,
+        alignItems: 'flex-start',
+        justifyContent: 'flex-end'
     },
     eventsContainer: {
-        height: windowHeight / 8,
-        width: windowWidth / 6 * 5,
         borderRadius: 20,
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginTop: windowHeight / 40,
-        backgroundColor: '#edd5c0'
+        marginVertical: windowHeight / 80,
+        backgroundColor: '#edd5c0',
     },
     profileImage: {
         flexDirection: 'row',
@@ -128,6 +141,10 @@ const styles = StyleSheet.create({
     events: {
         marginTop: 70,
         marginBottom: 30
+    },
+    text: {
+        fontSize: 14,
+        textAlign: 'left'
     }
 })
 

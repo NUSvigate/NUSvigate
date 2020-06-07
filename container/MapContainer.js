@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import MapView from 'react-native-maps';
 import * as Permissions from 'expo-permissions';
 import Polyline from '@mapbox/polyline'
@@ -70,14 +70,14 @@ export default class MapContainer extends React.Component {
         }
     }
 
-//    onMarkerPress = location => () => {
-//       const { coords: {latitude, longitude} } = location
-//       this.setState({
-//           destination: location,
-//           desLatitude: latitude,
-//           desLongitude: longitude
-//           }, this.mergeCoords)
-//    }
+   onMarkerPress = location=> () => {
+       const { coords: {latitude, longitude} } = location
+       this.setState({
+           destination: location,
+           desLatitude: latitude,
+           desLongitude: longitude
+           }, this.mergeCoords)
+    }
 
     renderMarkers = () => {
     const { locations } = this.state
@@ -92,7 +92,7 @@ export default class MapContainer extends React.Component {
                 <Marker
                   key = {idx}
                   coordinate ={{ latitude, longitude}}
-//                  onPress={this.onMarkerPress(location)}
+                  onPress={this.onMarkerPress(location)}
                   />
                )
             })
@@ -103,7 +103,7 @@ export default class MapContainer extends React.Component {
 
     render() {
 
-        const { latitude, longitude, coords } = this.state;
+        const { latitude, longitude, coords, destination } = this.state;
 
         if (latitude) {
             return (
@@ -124,7 +124,7 @@ export default class MapContainer extends React.Component {
                         coordinates={coords}
                     />
                 </MapView>
-            )
+            );
         }
 
         return (

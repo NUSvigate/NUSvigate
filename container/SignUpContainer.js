@@ -4,7 +4,7 @@ import SignUpButton from '../component/SignUpButton';
 import firebaseDb from '../firebaseDb';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { updateEmail, updatePassword, signup } from '../actions/user';
+import { updateEmail, updatePassword, updateName, signup } from '../actions/user';
 
 class SignUpContainer extends React.Component {
 
@@ -22,6 +22,13 @@ class SignUpContainer extends React.Component {
                 <Image
                     style={styles.image}
                     source={require('../assets/in.png')}
+                />
+
+                <TextInput
+                    style={styles.textInput}
+                    placeholder="Name"
+                    onChangeText={ name => this.props.updateName(name) }
+                    value={ this.props.user.name }
                 />
 
                 <TextInput
@@ -95,7 +102,7 @@ const styles = StyleSheet.create({
 })
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({ updateEmail, updatePassword, signup }, dispatch)
+    return bindActionCreators({ updateEmail, updatePassword, updateName, signup }, dispatch)
 }
 
 const mapStateToProps = state => {
