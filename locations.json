@@ -3,17 +3,17 @@
     "name": "Kent Ridge MRT station",
     "address": "301 South Buona Vista Road, 118177",
     "coords": {
-        "latitude": 1.2936,
-        "longitude": 103.7845
+        "latitude": 1.293260,
+        "longitude": 103.784470
     },
-    "image_url": "https://www.google.com/maps/uv?hl=en&pb=!1s0x31da1a52319edb39%3A0x9a36ad159e134e84!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNhenqxgQMIRPSucCA_2EXwDUM8xad2VeWq6L-M%3Dw240-h320-k-no!5skent%20ridge%20mrt%20station%20latitude%20and%20longitude%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipMqwFMN2AdPTj8WFru9cPQvCKvo10Ph2Dh50kNJ&sa=X&ved=2ahUKEwiPwq2qheDpAhX2zzgGHT4AAsIQoiowDXoECBgQCQ"
+    "image_url": "https://landtransportguru.net/web/wp-content/uploads/2016/05/ccl_cc24_mar16-5.jpg"
   },
   {
     "name": "NUS School of Computing",
     "address": "NUS School of Computing, COM1, 13 Computing Drive, 117417",
     "coords": {
-      "latitude": 1.2966,
-      "longitude": 103.7764
+      "latitude": 1.294790,
+      "longitude": 103.774071
     },
     "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
   },
@@ -21,10 +21,293 @@
     "name": "NUS Utown",
     "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
     "coords": {
-      "latitude": 1.3055,
-      "longitude": 103.7731
+      "latitude": 1.304570,
+      "longitude": 103.772392
     },
-    "image_url": "https://www.google.com/search?q=nus+utown&hl=en&sxsrf=ALeKk03rOGx8QUxV965aMBoI-060mT04xQ:1590994976183&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjd95OThuDpAhVGbSsKHfhKB7UQ_AUoAnoECA0QBA&biw=1440&bih=821#imgrc=DZReS8TsqWg_WM"
-  }
-
+    "image_url": "https://media.timeout.com/images/105387553/630/472/image.jp"
+  },
+  {
+    "name": "NUS Faculty of Arts and Social Sciences",
+    "address": "5 Arts Link, 5 The, Block AS7, Level, Shaw Foundation Building, 117570",
+    "coords": {
+      "latitude": 1.294214,
+      "longitude": 103.771112
+    },
+    "image_url": "https://assets.change.org/photos/6/sa/hm/iGSaHMeegvelhyR-800x450-noPad.jpg?1571151506"
+  },
+  {
+    "name": "NUS Business School",
+    "address": "15 Kent Ridge Dr, Singapore 119245",
+    "coords": {
+      "latitude": 1.293090,
+      "longitude": 103.773430
+    },
+    "image_url": "https://i1.wp.com/www.jenwanderstories.com/wp-content/uploads/2016/04/nus-business.jpg?fit=2464%2C1632&ssl=1"
+  },
+  {
+    "name": "NUS Faculty of Dentistry",
+    "address": "9 Lower Kent Ridge Rd, Level 10, Singapore 119085",
+    "coords": {
+      "latitude": 1.293090,
+      "longitude": 103.773430
+    },
+    "image_url": "https://qswownews.com/wp-content/uploads/2018/01/NUS-Dentistry.jpg"
+  },
+  {
+    "name": "NUS School of Design and Environment",
+    "address": " 4 Architecture Dr, Singapore 117566",
+    "coords": {
+      "latitude": 1.297300,
+      "longitude": 103.771080
+    },
+    "image_url": "https://urbannext.net/wp-content/uploads/2019/03/serie-architects_school-of-design-and-environment_02.jpg"
+  },
+  {
+    "name": "Yong Loo Lin School of Medicine",
+    "address": "10 Medical Dr, Singapore 117597",
+    "coords": {
+      "latitude": 1.295360,
+      "longitude": 103.780960
+    },
+    "image_url": "https://nusmedicine.nus.edu.sg/images/resources/content/alumni/alumni-banner.jpg"
+  },
+  {
+    "name": "NUS Faculty of Engineering",
+    "address": "9 Engineering Drive 1, #07-26 EA, Singapore 117575",
+    "coords": {
+      "latitude": 1.300340,
+      "longitude": 103.770600
+    },
+    "image_url": "https://www.eng.nus.edu.sg/wp-content/uploads/2019/02/mit_report_feature.jpg"
+  },
+  {
+    "name": "Yong Siew Toh Conservatory of Music",
+    "address": "3 Conservatory Drive, 117376",
+    "coords": {
+      "latitude": 1.302350,
+      "longitude": 103.772910
+    },
+    "image_url": "https://www.primestructures.com.sg/wp-content/uploads/2012/07/NUSYST1-1024x835.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://www.nuhs.edu.sg/research/Research-Programmes/PublishingImages/SSHSPH_Tahir%20Foundation%20Building.png"
+  },
+  {
+    "name": "Lee Kuan Yew School of Public Policy",
+    "address": " 469C Bukit Timah Rd, National University of Singapore, Singapore 259772",
+    "coords": {
+      "latitude": ,
+      "longitude":
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.295790,
+      "longitude": 103.779260
+    },
+    "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+  },{
+  "name": "Saw Swee Hock School Of Public Health",
+  "address": "12 Science Drive 2, #10-01, Singapore 117549",
+  "coords": {
+    "latitude": 1.295790,
+    "longitude": 103.779260
+  },
+  "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+},{
+  "name": "Saw Swee Hock School Of Public Health",
+  "address": "12 Science Drive 2, #10-01, Singapore 117549",
+  "coords": {
+    "latitude": 1.295790,
+    "longitude": 103.779260
+  },
+  "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+},{
+  "name": "Saw Swee Hock School Of Public Health",
+  "address": "12 Science Drive 2, #10-01, Singapore 117549",
+  "coords": {
+    "latitude": 1.295790,
+    "longitude": 103.779260
+  },
+  "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+},{
+  "name": "Saw Swee Hock School Of Public Health",
+  "address": "12 Science Drive 2, #10-01, Singapore 117549",
+  "coords": {
+    "latitude": 1.295790,
+    "longitude": 103.779260
+  },
+  "image_url": "https://sph.nus.edu.sg/wp-content/uploads/2019/04/2015.jpg"
+}
 ]
