@@ -9,8 +9,7 @@ import { updateEmail, updatePassword, updateName, signup } from '../actions/user
 class SignUpContainer extends React.Component {
 
     handleCreateUser = () => {
-        this.props.signup()
-        this.props.navigation.navigate('Main Menu')
+        this.props.signup();
     }
 
      render() {
@@ -52,7 +51,6 @@ class SignUpContainer extends React.Component {
                     style={styles.button}
                     onPress={() => {
                         this.handleCreateUser();
-                        Alert.alert('Sign Up Successful!');
                         }
                     }>
                     Sign Up

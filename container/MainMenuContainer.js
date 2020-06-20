@@ -1,9 +1,10 @@
 import React from 'react';
 import { SafeAreaView, Image, StyleSheet, Dimensions, View, Text, Button } from 'react-native';
+import { StackActions } from '@react-navigation/native';
 import GPSMapButton from '../component/GPSMapButton';
 import LostFoundButton from '../component/LostFoundButton';
 import ServicesInfoButton from '../component/ServicesInfoButton';
-import FAQButton from '../component/FAQButton';
+import FixesButton from '../component/FixesButton';
 import EventOneButton from '../component/EventOneButton';
 import EventTwoButton from '../component/EventTwoButton';
 
@@ -14,7 +15,7 @@ class MainMenuContainer extends React.Component {
 
     handleSignOut = () => {
         firebaseDb.auth().signOut()
-        this.props.navigation.navigate('Login')
+        this.props.navigation.dispatch(StackActions.popToTop());
     }
 
     render() {
@@ -40,7 +41,7 @@ class MainMenuContainer extends React.Component {
 
                     <GPSMapButton
                         style={styles.button}
-                        onPress={() => {this.props.navigation.navigate('Map')}}>
+                        onPress={() => {this.props.navigation.navigate('Map Dashboard')}}>
                     </GPSMapButton>
 
                     <LostFoundButton
@@ -53,10 +54,10 @@ class MainMenuContainer extends React.Component {
                         onPress={() => {this.props.navigation.navigate('ServicesInformation')}}>
                     </ServicesInfoButton>
 
-                    <FAQButton
+                    <FixesButton
                         style={styles.button}
                         onPress={() => {}}>
-                    </FAQButton>
+                    </FixesButton>
 
                 </SafeAreaView>
 
@@ -127,7 +128,8 @@ const styles = StyleSheet.create({
 
     },
     profileText: {
-        textAlign: 'right'
+        textAlign: 'right',
+        flexWrap: 'wrap'
     },
     button: {
         height: windowHeight / 7,
