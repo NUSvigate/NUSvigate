@@ -1,0 +1,38 @@
+[
+  {
+    "name": "NUS SoC, Embedded Systems Teaching Lab 2",
+    "address": "NUS SoC, COM1-0113, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.294790,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
+  },
+  {
+    "name": "NUS SoC, Programming Lab 6",
+    "address": "NUS SoC, COM1-0120, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.294790,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
+  },
+  {
+    "name": "NUS SoC, Embedded Systems Teaching Lab 1",
+    "address": "NUS SoC, COM1-0114, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.294790,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
+  },
+  {
+    "name": "NUS SoC, SR5 Active Learning Room",
+    "address": "NUS SoC, COM1-0201, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.294790,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM"
+  }
+]
