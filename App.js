@@ -1,19 +1,18 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView } from 'react-native';
-import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
-import thunkMiddleware from 'redux-thunk'
-import reducer from './reducers'
-import StackNavigator from './navigation/SwitchNavigator'
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import reducer from './reducers';
+import AppNavigator from './navigation/AppNavigator';
 
-// const stack = createStackNavigator();
 const middleware = applyMiddleware(thunkMiddleware)
 const store = createStore(reducer, middleware)
 
 export default function App() {
     return(
         <Provider store={store}>
-            <StackNavigator />
+            <AppNavigator />
         </Provider>
     );
 }
