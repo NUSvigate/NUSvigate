@@ -1,7 +1,9 @@
 import firebaseDb, { db } from '../firebaseDb';
+import { Alert } from 'react-native';
 
 export const UPDATE_EMAIL = 'UPDATE_EMAIL'
 export const UPDATE_PASSWORD = 'UPDATE_PASSWORD'
+export const UPDATE_NAME = 'UPDATE_NAME'
 export const LOGIN = 'LOGIN'
 export const SIGNUP = 'SIGNUP'
 
@@ -16,6 +18,13 @@ export const updatePassword = password => {
     return {
         type: UPDATE_PASSWORD,
         payload: password
+    }
+}
+
+export const updateName = name => {
+    return {
+        type: UPDATE_NAME,
+        payload: name
     }
 }
 
@@ -50,19 +59,21 @@ export const getUser = uid => {
 export const signup = () => {
     return async (dispatch, getState) => {
         try {
-            const { email, password } = getState().user
+            const { email, password, name } = getState().user
             const response = await firebaseDb.auth().createUserWithEmailAndPassword(email, password)
             if (response.user.uid) {
                 const user = {
                     uid: response.user.uid,
-                    email: email
+                    email: email,
+                    name: name
                 }
 
                 db.collection('users')
                     .doc(response.user.uid)
                     .set(user)
 
-                dispatch({ type: SIGNUP, payload: user })
+                dispatch({ type: SIGNUP, payload: user });
+                Alert.alert('Sign Up Successful!');
             }
         } catch (e) {
             alert(e)
