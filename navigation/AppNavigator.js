@@ -19,6 +19,9 @@ import ConnectPrinterMacContainer from "../container/ConnectPrinterMacContainer"
 import EventOneContainer from "../container/EventOneContainer";
 import EventTwoContainer from "../container/EventTwoContainer";
 import MapDashboardContainer from "../container/MapDashboardContainer";
+import LostFoundContainer from "../container/LostFoundContainer";
+import LostItemFilterContainer from "../container/LostItemFilterContainer";
+import FoundItemFilterContainer from "../container/FoundItemFilterContainer";
 
 const Tab = createBottomTabNavigator();
 function ServicesInformation() {
@@ -43,7 +46,6 @@ function ServicesInformation() {
                 name='Utility'
                 component={ServicesUtilityContainer}
             />
-
         </Tab.Navigator>
     )
 }
@@ -118,6 +120,24 @@ export default function AppNavigator() {
                     <Stack.Screen
                         name='Event Two'
                         component={EventTwoContainer}
+                        options={{ headerTitle: false }}
+                    />
+
+                    <Stack.Screen
+                        name ='Lost Found'
+                        component={LostFoundContainer}
+                        options = {{ headerTitle: false }}
+                    />
+
+                    <Stack.Screen
+                        name='Found Item Filter'
+                        component={FoundItemFilterContainer}
+                        options={{ headerTitle: false }}
+                    />
+
+                    <Stack.Screen
+                        name='Lost Item Filter'
+                        component={LostItemFilterContainer}
                         options={{ headerTitle: false }}
                     />
                 </Stack.Navigator>
