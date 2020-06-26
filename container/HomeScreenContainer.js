@@ -54,7 +54,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#edd5c0'
+        backgroundColor: '#edd5c0',
+        marginVertical: 10
     },
     upperImage: {
         backgroundColor: '#b9d6eb'

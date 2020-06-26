@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, FlatList, Image, Dimensions, Alert } from 'react-native';
+import { View, StyleSheet, Text, FlatList, Image, Dimensions, Alert, ScrollView } from 'react-native';
 import Hyperlink from 'react-native-hyperlink';
 
 export default class ServicesAccommodationContainer extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
 
                 <Image
                     style={styles.image}
@@ -46,10 +46,10 @@ export default class ServicesAccommodationContainer extends Component {
 
                     {'\n'}
                     For clarifications, please contact the respective staff in the Halls of Residence / Student Residences /
-                    Residential Colleges whose contacts are available in the websites above.
+                    Residential Colleges whose contacts are available in the websites above. {'\n'}
                     </Text>
                 </Hyperlink>
-            </View>
+            </ScrollView>
         )
     }
 }

@@ -234,7 +234,7 @@ export default class ServicesUtilityContainer extends Component {
                     67736398 - Central Library {'\n'}
                     67770419 - Hon Sui Sen Memorial Library {'\n'}
                     62197732 - C J Koh Law Library {'\n'} {'\n'}
-                    Binding services for thesis, final year projects are also provided by the vendor in the library.
+                    Binding services for thesis, final year projects are also provided by the vendor in the library. {'\ns'}
                 </Text>
             </ScrollView>
         )

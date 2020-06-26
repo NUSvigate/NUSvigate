@@ -46,7 +46,7 @@ class MainMenuContainer extends React.Component {
 
                     <LostFoundButton
                         style={styles.button}
-                        onPress={() => {}}>
+                        onPress={() => {this.props.navigation.navigate('Lost Found')}}>
                     </LostFoundButton>
 
                     <ServicesInfoButton
@@ -74,7 +74,6 @@ class MainMenuContainer extends React.Component {
                     style={styles.eventsContainer}
                     onPress = {() => {this.props.navigation.navigate('Event Two')}}
                 />
-
             </SafeAreaView>
         )
     }

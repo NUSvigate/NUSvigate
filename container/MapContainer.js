@@ -7,10 +7,9 @@ import {
     Dimensions
 } from 'react-native';
 
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE, Marker } from 'react-native-maps';
 import * as Permissions from 'expo-permissions';
 import Polyline from '@mapbox/polyline';
-import { Marker } from 'react-native-maps';
 
 import MapPlaceList from '../component/MapPlaceList';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
@@ -31,7 +30,8 @@ export default class MapContainer extends Component {
         locations: faculties,
         isLoading: false,
         name: null,
-        color: null
+        color: null,
+        image: null
     }
 
     async componentDidMount() {
@@ -105,10 +105,12 @@ export default class MapContainer extends Component {
         this.setState({
             name: location.name,
             color: location.color,
+            image: location.image_url,
             destination: location,
             desLatitude: latitude,
             desLongitude: longitude
             }, this.mergeCoords)
+        console.log(this.state.image)
     }
 
     renderMarkers = () => {
@@ -139,6 +141,7 @@ export default class MapContainer extends Component {
         const {
             time,
             name,
+            image,
             coords,
             places,
             address,
@@ -150,41 +153,56 @@ export default class MapContainer extends Component {
 
         if (latitude) {
             return (
-                <View style={{ flex: 1 }}>
+                <View style={{flex: 1}}>
+                    <View style={{ flex: 5 }}>
+                        <View
+                            style={{
+                            width,
+                            paddingTop: 10,
+                            alignSelf: 'center',
+                            height: height * 0.15,
+                            backgroundColor: 'white',
+                            justifyContent: 'center'
+                        }}>
+                            <Text style={{ fontWeight: 'bold' }}> Name: {name} </Text>
+                            <Text style={{ fontWeight: 'bold' }}> Estimated Time: {time} </Text>
+                            <Text style={{ fontWeight: 'bold' }}> Estimated Distance: {distance} </Text>
+                            <Text style={{ fontWeight: 'bold' }}> Address: {address} </Text>
+                        </View>
 
-                    <View
-                        style={{
-                        width,
-                        paddingTop: 10,
-                        alignSelf: 'center',
-                        height: height * 0.15,
-                        backgroundColor: 'white',
-                        justifyContent: 'center'
-                    }}>
-                        <Text style={{ fontWeight: 'bold' }}> Name: {name} </Text>
-                        <Text style={{ fontWeight: 'bold' }}> Estimated Time: {time} </Text>
-                        <Text style={{ fontWeight: 'bold' }}> Estimated Distance: {distance} </Text>
-                        <Text style={{ fontWeight: 'bold' }}> Address: {address} </Text>
+                        <MapView
+                            showsUserLocation
+                            style={{ flex: 1  }}
+                            initialRegion={{
+                                latitude,
+                                longitude,
+                                latitudeDelta: 0.0922,
+                                longitudeDelta: 0.0421
+                            }}
+                        >
+
+                            {this.renderMarkers()}
+                            <MapView.Polyline
+                                strokeWidth={2}
+                                strokeColor='red'
+                                coordinates={coords}
+                            />
+                        </MapView>
                     </View>
 
-                    <MapView
-                        showsUserLocation
-                        style={{ flex: 1 }}
-                        initialRegion={{
-                            latitude,
-                            longitude,
-                            latitudeDelta: 0.0922,
-                            longitudeDelta: 0.0421
-                        }}
-                    >
-
-                        {this.renderMarkers()}
-                        <MapView.Polyline
-                            strokeWidth={2}
-                            strokeColor='red'
-                            coordinates={coords}
+                    <View style={{flex: 1}}>
+                        <Image
+                            source = {{ uri: image }}
+                            style={{
+                                flex:1,
+                                width: width * 0.95,
+                                alignSelf: 'center',
+                                height: height * 0.20,
+                                position: 'absolute',
+                                bottom: height * 0.05
+                            }}
                         />
-                    </MapView>
+                    </View>
                 </View>
             );
         }

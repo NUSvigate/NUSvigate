@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, Image, FlatList, Dimensions, Alert } from 'react-native';
+import { View, StyleSheet, Text, Image, FlatList, Dimensions, Alert, ScrollView } from 'react-native';
 import Hyperlink from 'react-native-hyperlink';
 
 export default class ServicesPaymentContainer extends Component {
     render() {
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <Image
                     style={styles.image}
                     source={require('../assets/header.png')}
@@ -58,7 +58,7 @@ export default class ServicesPaymentContainer extends Component {
                         Please refer to the Financial Aid tab under Services Information to find out more. {'\n'}
                     </Text>
                 </Hyperlink>
-            </View>
+            </ScrollView>
         )
     }
 }

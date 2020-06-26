@@ -31,13 +31,6 @@ class LoginContainer extends React.Component {
 
                 <TextInput
                     style={styles.textInput}
-                    placeholder="Name"
-                    onChangeText={ name => this.props.updateName(name) }
-                    value={ this.props.user.name }
-                />
-
-                <TextInput
-                    style={styles.textInput}
                     placeholder="Email"
                     onChangeText={ email => this.props.updateEmail(email) }
                     value={ this.props.user.email }
@@ -97,7 +90,7 @@ const styles = StyleSheet.create({
 })
 
 const mapDispatchToProps = dispatch => {
-    return bindActionCreators({ updateEmail, updatePassword, updateName, login, getUser }, dispatch)
+    return bindActionCreators({ updateEmail, updatePassword, login, getUser }, dispatch)
 }
 
 const mapStateToProps = state => {
