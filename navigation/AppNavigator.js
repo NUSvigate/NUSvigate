@@ -22,6 +22,7 @@ import MapDashboardContainer from "../container/MapDashboardContainer";
 import LostFoundContainer from "../container/LostFoundContainer";
 import LostItemFilterContainer from "../container/LostItemFilterContainer";
 import FoundItemFilterContainer from "../container/FoundItemFilterContainer";
+import FixesContainer from "../container/FixesContainer";
 
 const Tab = createBottomTabNavigator();
 function ServicesInformation() {
@@ -81,13 +82,13 @@ export default function AppNavigator() {
                     <Stack.Screen
                         name='Map Dashboard'
                         component = {MapDashboardContainer}
-                        options={{ headerShown: false }}
+                        options={{ title: false }}
                     />
 
                     <Stack.Screen
                         name='Map Container'
                         component={MapContainer}
-                        options={{ headerShown: false }}
+                        options={{ title: false }}
                         initialParams={{
                             locations: "restaurant"
                         }}
@@ -127,18 +128,32 @@ export default function AppNavigator() {
                         name ='Lost Found'
                         component={LostFoundContainer}
                         options = {{ headerTitle: false }}
+                        initialParams={{
+                            email: null
+                        }}
                     />
 
                     <Stack.Screen
                         name='Found Item Filter'
                         component={FoundItemFilterContainer}
                         options={{ headerTitle: false }}
+                        initialParams={{
+                            email: null
+                        }}
                     />
 
                     <Stack.Screen
                         name='Lost Item Filter'
                         component={LostItemFilterContainer}
                         options={{ headerTitle: false }}
+                    />
+
+                    <Stack.Screen
+                        name='Fixes'
+                        component={FixesContainer}
+                        initialParams={{
+                            email: null
+                        }}
                     />
                 </Stack.Navigator>
             </NavigationContainer>
