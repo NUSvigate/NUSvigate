@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions, Button, Alert, TextInput } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, Button, Alert, TextInput, Image } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import firebaseDb, { db } from '../firebaseDb';
 import { Dropdown } from 'react-native-material-dropdown';
@@ -14,7 +14,9 @@ export default class FoundItemFilterContainer extends Component {
             colorSelectedValue: 1,
             locationSelectedValue: 1,
             name: null,
-            image_uri: null
+            image_uri: null,
+            email: this.props.route.params.email,
+            description: null
     }
 
     setCategoryStateValue = (ddlValue) => {
@@ -69,6 +71,20 @@ export default class FoundItemFilterContainer extends Component {
             .catch((error) => {
                 Alert.alert("Error", error.message);
             });
+
+        const item = {
+            categoryValue: this.state.categorySelectedValue,
+            colorValue: this.state.colorSelectedValue,
+            locationValue: this.state.locationSelectedValue,
+            name: this.state.name,
+            image_url: this.state.image_uri,
+            email: this.state.email,
+            description: this.state.description
+        }
+
+        db.collection('lost items')
+            .doc(this.state.name)
+            .set(item)
     }
 
     render() {
@@ -76,6 +92,7 @@ export default class FoundItemFilterContainer extends Component {
         const {
             name,
             image_uri,
+            description,
             colorSelectedValue,
             categorySelectedValue,
             locationSelectedValue
@@ -102,41 +119,44 @@ export default class FoundItemFilterContainer extends Component {
 
         const color = [
             {
-                label: 'red',
+                label: 'transparent',
                 value: 1
             }, {
-                label: 'blue',
+                label: 'red',
                 value: 2
             }, {
-                label: 'brown',
+                label: 'blue',
                 value: 3
             }, {
-                label: 'pink',
+                label: 'brown',
                 value: 4
             }, {
-                label: 'purple',
+                label: 'pink',
                 value: 5
             }, {
-                label: 'turquoise',
+                label: 'purple',
                 value: 6
             }, {
-                label: 'green',
+                label: 'turquoise',
                 value: 7
             }, {
-                label: 'orange',
+                label: 'green',
                 value: 8
             }, {
-                label: 'yellow',
+                label: 'orange',
                 value: 9
             }, {
-                label: 'gray',
+                label: 'yellow',
                 value: 10
             }, {
-                label: 'white',
+                label: 'gray',
                 value: 11
             }, {
-                label: 'black',
+                label: 'white',
                 value: 12
+            }, {
+                label: 'black',
+                value: 13
             }
         ]
 
@@ -231,7 +251,26 @@ export default class FoundItemFilterContainer extends Component {
                         title = "Choose image..."
                         onPress = {this.onChooseImagePress}
                     />
+
+                    { image_uri && (
+                        <Image
+                            source = {{ uri: image_uri }}
+                            style = {{ width: 300, height: 200 }}
+                        />
+                    )}
+
                 </View>
+
+                <Text> Item Description: </Text>
+                <TextInput
+                    style={styles.description}
+                    multiline = {true}
+                    placeholder = "Item Description"
+                    onChangeText = { text => {
+                        this.setState({ description: text });
+                    }}
+                    value = { this.state.description }
+                />
 
                 <SubmitItemButton
                     onPress = {this.submitItem}
@@ -252,13 +291,13 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     dropdownContainer: {
-        height: height/3,
+        height: height/3.5,
         width: width,
         justifyContent: 'center',
         alignItems: 'center',
     },
     imageContainer: {
-        height: height / 4,
+        height: height / 3,
         width: width,
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -273,5 +312,12 @@ const styles = StyleSheet.create({
         width: width / 2,
         borderColor: 'black',
         borderWidth: 1,
-    }
+    },
+    description: {
+        height: height / 15,
+        width: width - 90,
+        borderColor: 'black',
+        borderWidth: 1,
+        marginBottom: 30
+    },
 })

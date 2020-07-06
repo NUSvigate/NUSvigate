@@ -5,13 +5,18 @@ import LostItemButton from '../component/LostItemButton';
 import FoundItemButton from '../component/FoundItemButton';
 
 export default class LostFoundContainer extends Component {
+
     render() {
+
+        const email = this.props.route.params.email;
         return (
             <View style = {styles.container}>
                 <FoundItemButton
                     style={styles.button}
                     onPress = {() => {
-                        this.props.navigation.navigate("Found Item Filter");
+                        this.props.navigation.navigate("Found Item Filter", {
+                            email: email
+                        });
                     }}
                 />
 

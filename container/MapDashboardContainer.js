@@ -12,7 +12,6 @@ export default class MapDashboardContainer extends Component {
         const { navigation } = this.props;
         return (
             <Container style = {styles.container}>
-                <MapSearchBar />
                 <Content>
                     <MapMenu navigation = { navigation } />
                 </Content>

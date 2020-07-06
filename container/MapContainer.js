@@ -19,6 +19,10 @@ const accommodations = require('../accommodations.json');
 const food = require('../f&b.json');
 const lectures = require('../lectures.json');
 const tutorials = require('../tutorials.json');
+const study = require('../study.json');
+const auditoriums = require('../auditoriums.json');
+const seminarRooms = require('../seminarRooms.json');
+const others = require('../others.json');
 
 const { width, height } = Dimensions.get('screen');
 
@@ -37,10 +41,14 @@ export default class MapContainer extends Component {
     async componentDidMount() {
 
         const placeType = this.props.route.params.locations;
-        if (placeType === 'accommodations') { this.setState({ locations: accommodations, color: 'aqua'})};
-        if (placeType === 'food') { this.setState({ locations: food, color: 'red' })};
-        if (placeType === 'lectures') { this.setState({ locations: lectures, color: 'navy' })};
-        if (placeType === 'tutorials') { this.setState({ locations: tutorials, color: 'violet' })};
+        if (placeType === 'accommodations') { this.setState({ locations: accommodations})};
+        if (placeType === 'food') { this.setState({ locations: food})};
+        if (placeType === 'lectures') { this.setState({ locations: lectures })};
+        if (placeType === 'tutorials') { this.setState({ locations: tutorials })};
+        if (placeType === 'study') { this.setState({ locations: study })}
+        if (placeType === 'auditoriums') { this.setState({ locations: auditoriums })}
+        if (placeType === 'seminarRooms') { this.setState({ locations: seminarRooms })}
+        if (placeType === 'others') { this.setState({ locations: others })}
 
         const { status } = await Permissions.getAsync(Permissions.LOCATION);
 
@@ -80,7 +88,7 @@ export default class MapContainer extends Component {
     async getDirections(startLoc, desLoc) {
 
         try {
-            const resp = await fetch (`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyDvMevOCENhN4DLzaT_bn60NqB2bOnLau0`)
+            const resp = await fetch (`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&mode=walking&key=AIzaSyDvMevOCENhN4DLzaT_bn60NqB2bOnLau0`)
             const respJson = await resp.json();
             const response = respJson.routes[0];
             const distanceTime = response.legs[0];
@@ -104,13 +112,11 @@ export default class MapContainer extends Component {
         const { coords: {latitude, longitude} } = location
         this.setState({
             name: location.name,
-            color: location.color,
             image: location.image_url,
             destination: location,
             desLatitude: latitude,
             desLongitude: longitude
             }, this.mergeCoords)
-        console.log(this.state.image)
     }
 
     renderMarkers = () => {
@@ -127,7 +133,7 @@ export default class MapContainer extends Component {
                                 key = {idx}
                                 coordinate ={{ latitude, longitude }}
                                 onPress={this.onMarkerPress(location)}
-                                pinColor={this.state.color}
+                                pinColor={location.color}
                             />
                         )
                     })

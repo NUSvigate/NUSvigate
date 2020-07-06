@@ -13,6 +13,10 @@ import firebaseDb from '../firebaseDb'
 
 class MainMenuContainer extends React.Component {
 
+    state = {
+        email: this.props.user.email
+    }
+
     handleSignOut = () => {
         firebaseDb.auth().signOut()
         this.props.navigation.dispatch(StackActions.popToTop());
@@ -41,12 +45,17 @@ class MainMenuContainer extends React.Component {
 
                     <GPSMapButton
                         style={styles.button}
-                        onPress={() => {this.props.navigation.navigate('Map Dashboard')}}>
+                        onPress={() => {
+                            this.props.navigation.navigate('Map Dashboard')}}>
                     </GPSMapButton>
 
                     <LostFoundButton
                         style={styles.button}
-                        onPress={() => {this.props.navigation.navigate('Lost Found')}}>
+                        onPress={() => {
+                            this.props.navigation.navigate('Lost Found', {
+                                email: this.state.email
+                            })
+                        }}>
                     </LostFoundButton>
 
                     <ServicesInfoButton
@@ -56,7 +65,11 @@ class MainMenuContainer extends React.Component {
 
                     <FixesButton
                         style={styles.button}
-                        onPress={() => {}}>
+                        onPress={() => {
+                            this.props.navigation.navigate('Fixes', {
+                                email: this.state.email
+                            })
+                        }}>
                     </FixesButton>
 
                 </SafeAreaView>
