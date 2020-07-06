@@ -1,0 +1,30 @@
+[
+  {
+    "name": "UTown Auditorium 1, NUS",
+    "address": "1 Create Way Level 1, Town Plaza, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUTOWN-%20audi%201.jpg?alt=media&token=1e82e9b2-8d01-495d-913d-0824300e49de",
+    "color": "orange"
+  }, {
+    "name": "UTown Auditorium 2, NUS",
+    "address": "2 College Ave West, Level 1 Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.77239
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUTOWN%20-%20audi%202.jpg?alt=media&token=703b3ba8-404f-4046-a924-00bd6fcff987",
+    "color": "orange"
+  }, {
+    "name": "Auditorium 3, UTown",
+    "address": "College Avenue East Singapore",
+    "coords": {
+      "latitude": 1.30661,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUtown%20-%20Audi%203.jpg?alt=media&token=505066b3-7ea4-40df-9f17-fc8e0199932b",
+    "color": "orange"
+  }
+]

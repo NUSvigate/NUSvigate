@@ -8,6 +8,7 @@ import AppNavigator from './navigation/AppNavigator';
 
 const middleware = applyMiddleware(thunkMiddleware)
 const store = createStore(reducer, middleware)
+console.disableYellowBox = true;
 
 export default function App() {
     return(
