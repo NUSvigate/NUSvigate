@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, FlatList, Image } from 'react-native';
 import { Dropdown } from 'react-native-material-dropdown';
+import firebaseDb from '../firebaseDb'
 
-import SearchItemButton from '../component/SubmitItemButton';
+import SearchItemButton from '../component/SearchItemButton';
 
 export default class FoundItemFilterContainer extends Component {
 
     state = {
         categorySelectedValue: 1,
-        colorSelectedValue: 1,
-        locationSelectedValue: 1
+        locationSelectedValue: 1,
+        items: null,
+        filteredItems: [],
+        filtered: false
+    }
+
+    componentDidMount() {
+        firebaseDb.firestore().collection('lost items').get().then(querySnapshot => {
+            const results = []
+            querySnapshot.docs.map(documentSnapshot => results.push(documentSnapshot.data()))
+            this.setState({ items: results })
+        }).catch(err => console.error(err))
     }
 
     setCategoryStateValue = (ddlValue) => {
         this.setState({
             categorySelectedValue: ddlValue
-        });
-    }
-
-    setColorStateValue = (ddlValue) => {
-        this.setState({
-            colorSelectedValue: ddlValue
         });
     }
 
@@ -30,7 +35,27 @@ export default class FoundItemFilterContainer extends Component {
         });
     }
 
+    searchItems = () => {
+        const items = [];
+        this.state.items.forEach(item => this.compareItems(item) ? items.push(item) : null)
+
+        this.setState({ filteredItems: items, filtered: true })
+    }
+
+    compareItems = (item) => {
+        if (item.categoryValue === this.state.categorySelectedValue
+        && item.locationValue === this.state.locationSelectedValue) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
     render() {
+
+        const { items, filteredItems, filtered } = this.state;
 
         const categories = [
             {
@@ -48,46 +73,6 @@ export default class FoundItemFilterContainer extends Component {
             }, {
                 label: 'others',
                 value: 5
-            }
-        ]
-
-        const color = [
-            {
-                label: 'red',
-                value: 1
-            }, {
-                label: 'blue',
-                value: 2
-            }, {
-                label: 'brown',
-                value: 3
-            }, {
-                label: 'pink',
-                value: 4
-            }, {
-                label: 'purple',
-                value: 5
-            }, {
-                label: 'turquoise',
-                value: 6
-            }, {
-                label: 'green',
-                value: 7
-            }, {
-                label: 'orange',
-                value: 8
-            }, {
-                label: 'yellow',
-                value: 9
-            }, {
-                label: 'gray',
-                value: 10
-            }, {
-                label: 'white',
-                value: 11
-            }, {
-                label: 'black',
-                value: 12
             }
         ]
 
@@ -130,43 +115,60 @@ export default class FoundItemFilterContainer extends Component {
 
         return (
             <View style = {styles.container}>
-                <Dropdown
-                    containerStyle = {styles.dropdown}
-                    data = {categories}
-                    value = {this.state.categorySelectedValue}
-                    label = 'Category'
-                    itemColor = 'blue'
-                    useNativeDriver = {true}
-                    onChangeText = {(value, data, index) => {
-                        this.setCategoryStateValue(value)
-                    }}
-                />
+                <View style = {styles.dropdownContainer}>
+                    <Dropdown
+                        containerStyle = {styles.dropdown}
+                        data = {categories}
+                        value = {this.state.categorySelectedValue}
+                        label = 'Category'
+                        itemColor = 'blue'
+                        useNativeDriver = {true}
+                        onChangeText = {(value, data, index) => {
+                            this.setCategoryStateValue(value)
+                        }}
+                    />
 
-                <Dropdown
-                    containerStyle = {styles.dropdown}
-                    data = {color}
-                    value = {this.state.colorSelectedValue}
-                    label = 'Colour'
-                    itemColor = 'blue'
-                    useNativeDriver = {true}
-                    onChangeText = {(value, data, index) => {
-                        this.setColorStateValue(value)
-                    }}
-                />
+                    <Dropdown
+                        containerStyle = {styles.dropdown}
+                        data = {location}
+                        value = {this.state.locationSelectedValue}
+                        label = 'Where item was found'
+                        itemColor = 'blue'
+                        useNativeDriver = {true}
+                        onChangeText = {(value, data, index) => {
+                            this.setLocationStateValue(value)
+                        }}
+                    />
 
-                <Dropdown
-                    containerStyle = {styles.dropdown}
-                    data = {location}
-                    value = {this.state.locationSelectedValue}
-                    label = 'Where item was found'
-                    itemColor = 'blue'
-                    useNativeDriver = {true}
-                    onChangeText = {(value, data, index) => {
-                        this.setLocationStateValue(value)
-                    }}
-                />
+                    <SearchItemButton
+                        onPress = { this.searchItems }
+                    />
+                </View>
 
-                <SearchItemButton/>
+                <View style = {styles.flatListContainer}>
+
+                    { filteredItems && (
+                        <FlatList
+                            data = { filteredItems }
+                            renderItem = {({ item }) => (
+                                <View style={styles.itemContainer}>
+                                    <Text> { item.description } </Text>
+                                    <Text> { item.email } </Text>
+                                    <Image
+                                        source = {{ uri: item.image_url }}
+                                        style = {styles.image}
+                                    />
+                                </View>
+                            )}
+                            style = { styles.flatList }
+                            keyExtractor = { item => item.email }
+                        />
+                    )}
+
+                    { filteredItems.length === 0 && filtered && (
+                        <Text> No items in the inventory match the item you are looking for! </Text>
+                    )}
+                </View>
             </View>
         )
     }
@@ -179,12 +181,29 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         backgroundColor: '#b9d6eb',
-        justifyContent: 'center',
-        alignItems: 'center'
+        justifyContent: 'flex-start',
+        alignItems: 'center',
     },
-    dropdown: {
+    dropdownContainer: {
         width: width / 1.2,
         marginHorizontal: 20,
-        marginBottom: 5
+        marginVertical: 5,
+    },
+    flatListContainer: {
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start',
+        width: width / 1.2,
+    },
+    flatList: {
+        marginTop: 20,
+    },
+    itemContainer: {
+        justifyContent: 'flex-start',
+        alignItems: 'flex-start'
+    },
+    image: {
+        width: width / 1.2,
+        height: height / 5,
+        marginBottom: 20
     }
 })

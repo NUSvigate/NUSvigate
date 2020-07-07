@@ -11,23 +11,17 @@ export default class FoundItemFilterContainer extends Component {
 
     state = {
             categorySelectedValue: 1,
-            colorSelectedValue: 1,
             locationSelectedValue: 1,
             name: null,
             image_uri: null,
             email: this.props.route.params.email,
-            description: null
+            description: null,
+            accessToken: null
     }
 
     setCategoryStateValue = (ddlValue) => {
         this.setState({
             categorySelectedValue: ddlValue
-        });
-    }
-
-    setColorStateValue = (ddlValue) => {
-        this.setState({
-            colorSelectedValue: ddlValue
         });
     }
 
@@ -65,19 +59,26 @@ export default class FoundItemFilterContainer extends Component {
 
     submitItem = async () => {
         this.uploadImage(this.state.image_uri, this.state.name)
+            .then(snapshot => {
+                snapshot.ref.getDownloadURL().then(url => {
+                    this.setState({ accessToken: url })
+                })
+                .then(this.updateDatabase)
+            })
             .then(() => {
                 Alert.alert("Success");
             })
             .catch((error) => {
                 Alert.alert("Error", error.message);
             });
+    }
 
+    updateDatabase = () => {
         const item = {
             categoryValue: this.state.categorySelectedValue,
-            colorValue: this.state.colorSelectedValue,
             locationValue: this.state.locationSelectedValue,
             name: this.state.name,
-            image_url: this.state.image_uri,
+            image_url: this.state.accessToken,
             email: this.state.email,
             description: this.state.description
         }
@@ -93,7 +94,6 @@ export default class FoundItemFilterContainer extends Component {
             name,
             image_uri,
             description,
-            colorSelectedValue,
             categorySelectedValue,
             locationSelectedValue
         } = this.state;
@@ -114,49 +114,6 @@ export default class FoundItemFilterContainer extends Component {
             }, {
                 label: 'others',
                 value: 5
-            }
-        ]
-
-        const color = [
-            {
-                label: 'transparent',
-                value: 1
-            }, {
-                label: 'red',
-                value: 2
-            }, {
-                label: 'blue',
-                value: 3
-            }, {
-                label: 'brown',
-                value: 4
-            }, {
-                label: 'pink',
-                value: 5
-            }, {
-                label: 'purple',
-                value: 6
-            }, {
-                label: 'turquoise',
-                value: 7
-            }, {
-                label: 'green',
-                value: 8
-            }, {
-                label: 'orange',
-                value: 9
-            }, {
-                label: 'yellow',
-                value: 10
-            }, {
-                label: 'gray',
-                value: 11
-            }, {
-                label: 'white',
-                value: 12
-            }, {
-                label: 'black',
-                value: 13
             }
         ]
 
@@ -209,18 +166,6 @@ export default class FoundItemFilterContainer extends Component {
                         useNativeDriver = {true}
                         onChangeText = {(value, data, index) => {
                             this.setCategoryStateValue(value)
-                        }}
-                    />
-
-                    <Dropdown
-                        containerStyle = {styles.dropdown}
-                        data = {color}
-                        value = {this.state.colorSelectedValue}
-                        label = 'Colour'
-                        itemColor = 'blue'
-                        useNativeDriver = {true}
-                        onChangeText = {(value, data, index) => {
-                            this.setColorStateValue(value)
                         }}
                     />
 
