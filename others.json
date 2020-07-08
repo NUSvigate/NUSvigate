@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Kent Ridge MRT station",
+    "address": "301 South Buona Vista Road, 118177",
+    "coords": {
+      "latitude": 1.29326,
+      "longitude": 103.78447
+    },
+    "image_url": "https://landtransportguru.net/web/wp-content/uploads/2016/05/ccl_cc24_mar16-5.jpg",
+    "color": "green"
+  },
+  {
+    "name": "University Hall",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.297136,
+      "longitude": 103.777527
+    },
+    "image_url": "https://live.staticflickr.com/121/369062159_c0a2d1c6cb_b.jpg",
+    "color": "green"
+  },
+  {
+    "name": "Multi Purpose Sport Hall",
+    "address": "2 sports drive, Singapore 117561 Sports Drive 1, Singapore 117561",
+    "coords": {
+      "latitude": 1.29891,
+      "longitude": 103.77535
+    },
+    "image_url": "https://fastly.4sqi.net/img/general/600x600/paT5EQFEi96vwCUKF8OqAoVuWTBTp28ScajMxmCnCss.jpg",
+    "color": "green"
+  },
+  {
+    "name": "University Sports Centre (USC)",
+    "address": "2 Sports Drive 1, National University of Singapore, Singapore 117561",
+    "coords": {
+      "latitude": 1.29958,
+      "longitude": 103.77538
+    },
+    "image_url": "https://uci.nus.edu.sg/suu/wp-content/uploads/sites/5/2018/11/20181031_100734.jpg",
+    "color": "green"
+  },
+  {
+    "name": "Office of Undergraduate Studies",
+    "address": "15 Computing Dr, Singapore 117418",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77388889
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FCOM-office%20of%20student%20life%20%26%20undergraduate%20studies.jpg?alt=media&token=00517629-601f-4579-b553-3a265348559c",
+    "color": "green"
+  },
+  {
+    "name": "CREATE Tower NUS",
+    "address": "1 Create Way, Singapore 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FCREATE%20Building.jpg?alt=media&token=5eeefe77-317f-4ec1-a1a7-453928eea59f",
+    "color": "green"
+  },
+  {
+    "name": "Chua Thian Poh Hall",
+    "address": "16 College Ave E, Singapore 138592",
+    "coords": {
+      "latitude": 1.307,
+      "longitude": 103.77328
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FChua%20Thian%20Poh%20Hall.jpg?alt=media&token=0eee9d3e-8c35-4168-8eb0-86e2f6d19001",
+    "color": "green"
+  },
+  {
+    "name": "Dance Studio",
+    "address": "UTOWN Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.77239
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FDance%20Studio.jpg?alt=media&token=b055a118-1023-4d05-99da-022d3ec82512",
+    "color": "green"
+  },
+  {
+    "name": "COM - Student Lounge",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77388889
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FIMG_0802.jpg?alt=media&token=825522a8-35ce-4e16-847e-28c518b7fcb6",
+    "color": "green"
+  },
+  {
+    "name": "Makers@SoC",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29527778,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FMAKERS%40SOC.jpg?alt=media&token=2649a639-701b-4321-a2f4-f4d753af3fdd",
+    "color": "green"
+  },
+  {
+    "name": "PitStop@YIH",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29888889,
+      "longitude": 103.775
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FPitstop%20%40%20YIH.jpg?alt=media&token=9a9f8aac-8ed2-43ef-8348-48c6dc5c2762",
+    "color": "green"
+  },
+  {
+    "name": "UTOWN Global Learning Room",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.305,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN%20Global%20Learning%20Room.jpg?alt=media&token=c431b37b-acd1-4ccc-a9e4-b476adf8462f",
+    "color": "green"
+  },
+  {
+    "name": "NUS School of Continuing and Lifelong Education (SCALE)",
+    "address": "University Town, Education Resource Centre, 8 College Avenue West, #02‐16, 138608",
+    "coords": {
+      "latitude": 1.30584,
+      "longitude": 103.77261
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN-%20School%20of%20continuing%20and%20lifelong%20education.jpg?alt=media&token=5ecabd13-f580-4cec-84fa-c2fce5e82ece",
+    "color": "green"
+  },
+  {
+    "name": "Global Learning Room",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN-%20Global%20Learning%20Room.jpg?alt=media&token=fcd14d98-322c-4fc3-9cba-9ab94b9250f5",
+    "color": "green"
+  }
+]

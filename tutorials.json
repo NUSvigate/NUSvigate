@@ -1,0 +1,22 @@
+[
+  {
+    "name": "COM - TR 10",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FTutorial%20Rooms%2FTR%2010.jpg?alt=media&token=4dd31045-b977-46ac-98d1-35d6f2f2847e",
+    "color": "turquoise"
+  },
+  {
+    "name": "COM - TR 11",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FTutorial%20Rooms%2FTR%2011.jpg?alt=media&token=5462b545-73c6-4db9-acb0-d3406258e4ed",
+    "color": "turquoise"
+  }
+]
