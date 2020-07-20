@@ -1,0 +1,162 @@
+[
+  {
+    "name": "NUS Coop @ Lt 27",
+    "address": "27 Science Drive 1 Lecture Theatre, LT27, 117541",
+    "coords": {
+      "latitude": 1.29694,
+      "longitude": 103.78053
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FSci%20-%20NUS%20COOP.jpg?alt=media&token=e724aeb0-e3b8-467b-942c-d907f450017d",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "OMO Store",
+    "address": "COM 1: 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FIMG_0809.jpg?alt=media&token=98ef7ac7-1365-4948-9f44-90aafe89169b",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Cheers NUS Utown",
+    "address": "1 Create Way, #01-01, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.774117
+    },
+    "image_url": "https://scoop.coop/wp-content/uploads/2018/06/cheers.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "YIH - 7-Eleven",
+    "address": "31 Lower Kent Ridge Rd, #01-03 Yusof Ishak House, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FYIH-%20711.jpg?alt=media&token=dee2cf31-c6fa-4411-a62a-f330f54e2d4a",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Engineering Cheers Unmanned Convenience Store",
+    "address": "Block E3 Level 6",
+    "coords": {
+      "latitude": 1.29862,
+      "longitude": 103.77264
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/03/MVIMG_20190125_123009-1024x576.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "FairPrice Xpress NUS",
+    "address": " College Ave West, #01-05 Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30468,
+      "longitude": 103.77185
+    },
+    "image_url": "https://scoop.coop/wp-content/uploads/2018/06/fairprice-express.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "NUS Bookhaven",
+    "address": "2 College Ave West, #01-07 University Town, NUS",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/SRC-BookHaven-1024x769.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "NUS CO-OP@Central Forum",
+    "address": "NUS Multi-Purpose Co-operative Society Limited 12 Kent Ridge Cresent Central Library Building, CLB01, 02, Singapore 119275",
+    "coords": {
+      "latitude": 1.29675,
+      "longitude": 103.77315
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FCOM%20-%20NUS%20Coop.jpg?alt=media&token=fc4d8950-ea98-4eb5-b240-c25292a90381",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Goh Bros E-Print Pte Ltd",
+    "address": "31 Lower Kent Ridge Rd, Yusof Ishak House, Singapore 119078",
+    "coords": {
+      "latitude": 1.29888889,
+      "longitude": 103.775
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FGOH%20BROS%20-%20e-print%20pte%20ltd.jpg?alt=media&token=0c690405-9601-4023-ab74-66b7876e7391",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Hair Destination",
+    "address": "UTown Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.305,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FHair%20Destination.jpg?alt=media&token=876f6543-2f50-40eb-859a-6ed6beb3f95d",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "NUS PRESS Bookstore and Office",
+    "address": "3 Arts Link AS3 #01-02, National University of Singapore, 117569",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77083333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FNUS%20PRESS%20Bookshop%20%26%20Office.jpg?alt=media&token=0a67e695-1175-4de9-8e47-18772ebff43f",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Octobox NUS",
+    "address": "UTown Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77083333
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/Octobox1-1024x684.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Cold Storage NUS Kent Vale",
+    "address": "101, #01-01 Clementi Rd, Kent vale Estate, 129787",
+    "coords": {
+      "latitude": 1.3004,
+      "longitude": 103.76884
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/Cold-Storage-1-1024x684.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Frank by OCBC",
+    "address": "No. 2 College Avenue West, NUS Stephen Riady Centre, #01-01, Singapore 138607",
+    "coords": {
+      "latitude": 1.27857,
+      "longitude": 103.8236
+    },
+    "image_url": "https://www.ocbc.com/assets/images/media/2019/frank%20store%201.jpgg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "Nanyang Minimart",
+    "address": "31 Prince George's Park, Singapore 118427",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/PGP-Nanyang-Mart-1024x768.jpg",
+    "color": "lightskyblue"
+  },
+  {
+    "name": "STA Travel",
+    "address": "2, #01-07 College Ave West, Inside BookHaven), University Town, Stephen Riady Centre, 138607",
+    "coords": {
+      "latitude": 1.27857,
+      "longitude": 103.8236
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/STA-1024x684.jpg",
+    "color": "lightskyblue"
+  }
+]
