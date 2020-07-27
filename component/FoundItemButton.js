@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
-import { StyleSheet, Button } from 'react-native';
+import { StyleSheet, TouchableOpacity, Image, Text } from 'react-native';
 
 const FoundItemButton = props => (
-    <Button style={[styles.container, props.style]}
-            title='Found an Item'
-            onPress={props.onPress}
-    />
+    <TouchableOpacity
+        style={[styles.container, props.style]}
+        onPress={props.onPress}
+        color= "#b9d6eb"
+    >
+        <Image
+            source = { require("../assets/foundItem.png")}
+            style = { styles.image }
+        />
+
+        <Text style={styles.text}> Found and Item </Text>
+    </TouchableOpacity>
 )
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white'
+        backgroundColor: '#b9d6eb'
     },
     text: {
-        fontSize: 15,
+        fontSize: 18,
         paddingHorizontal: 10,
-        paddingVertical: 8,
-        borderRadius: 5,
+        paddingVertical: 10,
         color: 'black',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight: 'bold'
+    },
+    image: {
+        backgroundColor: '#b9d6eb'
     }
 })
 

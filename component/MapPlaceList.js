@@ -11,7 +11,7 @@ import { ListItem } from 'react-native-elements';
 import { Container, Content } from 'native-base';
 import { GOOGLE_API_KEY } from 'react-native-dotenv';
 
-const locations = require('../locations.json');
+const locations = require('../locations/locations.json');
 
 export default class MapPlaceList extends Component {
     render() {

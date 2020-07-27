@@ -1,24 +1,35 @@
 import React from 'react';
-import { StyleSheet, Button } from 'react-native';
+import { TouchableOpacity, StyleSheet, Image, Text } from 'react-native';
 
 const LostItemButton = props => (
-    <Button style={[styles.container, props.style]}
-            title='Lost an Item'
-            onPress={props.onPress}
-    />
+    <TouchableOpacity
+        style={[styles.container, props.style]}
+        onPress={props.onPress}
+        color = '#b9d6eb'
+    >
+        <Image
+            style = { styles.image }
+            source = { require("../assets/lostItem.png") }
+        />
+
+        <Text style = { styles.text}> Lost an Item </Text>
+    </TouchableOpacity>
 )
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'white'
+        backgroundColor: '#b9d6eb'
     },
     text: {
-        fontSize: 15,
+        fontSize: 18,
         paddingHorizontal: 10,
-        paddingVertical: 8,
         borderRadius: 5,
         color: 'black',
-        textAlign: 'center'
+        textAlign: 'center',
+        fontWeight: 'bold'
+    },
+    image: {
+        backgroundColor: '#b9d6eb'
     }
 })
 
