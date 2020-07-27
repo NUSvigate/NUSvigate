@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, Text, Dimensions, Button, Alert } from 'react-native';
+import { StyleSheet, View, TextInput, Text, Dimensions, Button, Alert, TouchableOpacity, Image } from 'react-native';
 import firebaseDb, { db } from '../firebaseDb';
 import * as ImagePicker from 'expo-image-picker';
 import { Dropdown } from 'react-native-material-dropdown';
@@ -13,7 +13,8 @@ export default class FixesContainer extends Component {
         exactLocation: null,
         image_uri: null,
         locationSelectedValue: 1,
-        description: null
+        description: null,
+        accessToken: null
     }
 
     setLocationStateValue = (ddlValue) => {
@@ -62,25 +63,37 @@ export default class FixesContainer extends Component {
 
     submitItem = async () => {
         this.uploadImage(this.state.image_uri, this.state.exactLocation)
+        .then(snapshot => {
+            snapshot.ref.getDownloadURL().then(url => {
+                this.setState({ accessToken: url })
+            })
+            .then(this.updateDatabase)
+        })
         .then(() => {
             Alert.alert("Success");
         })
         .catch((error) => {
-            Alert.alert("Error", error.message);
+            if (error.message = "Network request error") {
+                Alert.alert("Please attach an image of the damaged property/facility!")
+            } else {
+                Alert.alert("Error", error.message);
+            }
         });
+    }
 
+    updateDatabase = () => {
         const fix = {
             locationValue: this.state.locationSelectedValue,
             imageName: this.state.exactLocation,
-            image_url: this.state.image_uri,
+            image_url: this.state.accessToken,
             email: this.state.email,
             description: this.state.description
         }
 
-            db.collection('fixes')
-                .doc(this.state.exactLocation)
-                .set(fix)
-        }
+        db.collection('fixes')
+            .doc(this.state.exactLocation)
+            .set(fix)
+    }
 
     render() {
 
@@ -89,7 +102,8 @@ export default class FixesContainer extends Component {
             image_uri,
             locationSelectedValue,
             exactLocation,
-            description
+            description,
+            accessToken
          } = this.state;
 
         const location = [
@@ -166,13 +180,22 @@ export default class FixesContainer extends Component {
                             this.updateDescription(text)
                         }}
                     />
+
+                    { this.state.image_uri &&
+                        <Image
+                            source = {{ uri: this.state.image_uri }}
+                            style = {{ width: 300, height: 200, marginBottom: 10}}
+                        />
+                    }
                 </View>
 
                 <View style = {styles.imageContainer}>
-                    <Button
-                        title = "Choose image..."
+                    <TouchableOpacity
                         onPress = {this.onChooseImagePress}
-                    />
+                        style = {{ marginBottom: 20}}
+                    >
+                        <Text> Choose Image </Text>
+                    </TouchableOpacity>
                 </View>
 
                 <SubmitFixesButton
@@ -216,7 +239,7 @@ const styles = StyleSheet.create({
         marginBottom: 20
     },
     description: {
-        height: height / 4,
+        height: height / 5,
         width: width / 1.2,
         borderColor: 'black',
         borderWidth: 1,

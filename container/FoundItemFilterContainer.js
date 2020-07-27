@@ -58,6 +58,7 @@ export default class FoundItemFilterContainer extends Component {
     }
 
     submitItem = async () => {
+
         this.uploadImage(this.state.image_uri, this.state.name)
             .then(snapshot => {
                 snapshot.ref.getDownloadURL().then(url => {
@@ -69,7 +70,11 @@ export default class FoundItemFilterContainer extends Component {
                 Alert.alert("Success");
             })
             .catch((error) => {
-                Alert.alert("Error", error.message);
+                if (error.message === "Network request failed") {
+                    Alert.alert("Please attach an image.")
+                } else {
+                    Alert.alert("Error", error.message);
+                }
             });
     }
 
@@ -258,7 +263,8 @@ const styles = StyleSheet.create({
         width: width / 1.2,
         borderColor: 'black',
         borderWidth: 1,
-        marginLeft: 20
+        marginLeft: 20,
+        justifyContent: 'center'
     },
     description: {
         height: height / 10,

@@ -12,7 +12,7 @@ const FoundItemButton = props => (
             style = { styles.image }
         />
 
-        <Text style={styles.text}> Found and Item </Text>
+        <Text style={styles.text}> Found an Item </Text>
     </TouchableOpacity>
 )
 

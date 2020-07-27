@@ -95,43 +95,6 @@ export default class MapContainer extends Component {
       },
       this.mergeCoords
     );
-
-    const url =
-        "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=" +
-        this.state.busStopCode;
-
-        const xhr = new XMLHttpRequest();
-
-        xhr.open("GET", url);
-        xhr.setRequestHeader("AccountKey", "V5OA2L1rRBSCReQl4uMvyA==");
-        xhr.send();
-
-        let busArrival = [];
-
-        xhr.onload = () => {
-
-          if (xhr.status === 200) {
-              console.log("status 200");
-
-              console.log("================= RESULTS =====================\n");
-
-              const obj = JSON.parse(xhr.responseText);
-              const services = obj.Services;
-
-              for (let i = 0; i < services.length; i++) {
-                  busArrival =
-                      [
-                          services[i].ServiceNo,
-                          services[i].NextBus.EstimatedArrival,
-                          services[i].NextBus2.EstimatedArrival
-                      ]
-              }
-          } else {
-              console.log(`error ${xhr.status} ${xhr.statusText}`);
-          }
-        }
-
-        this.setState({ busArrival1: busArrival })
   }
 
   mergeCoords = () => {
@@ -196,8 +159,45 @@ export default class MapContainer extends Component {
 
   getBusTimes = () => {
 
+      const url =
+            "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=" +
+            this.state.busStopCode;
 
-      return (<Text style={styles.busArrival}> { this.state.busArrival1 } </Text>)
+            const xhr = new XMLHttpRequest();
+
+            xhr.open("GET", url);
+            xhr.setRequestHeader("AccountKey", "V5OA2L1rRBSCReQl4uMvyA==");
+            xhr.send();
+
+            let busArrival = [];
+
+            xhr.onload = () => {
+
+                if (xhr.status === 200) {
+                    console.log("status 200");
+
+                    console.log("================= RESULTS =====================\n");
+
+                    const obj = JSON.parse(xhr.responseText);
+                    const services = obj.Services;
+
+                    for (let i = 0; i < services.length; i++) {
+                        this.setState({
+                            busArrival1:
+                                [
+                                    services[i].ServiceNo,
+                                    services[i].NextBus2.EstimatedArrival,
+                                    services[i].NextBus3.EstimatedArrival
+
+                                ]
+                        })
+                    }
+                } else {
+                    console.log(`error ${xhr.status} ${xhr.statusText}`);
+                }
+            }
+
+      return ( <Text style={{fontWeight: "bold"}}> { this.state.busArrival1 } </Text> )
   }
 
   renderMarkers = () => {
@@ -281,7 +281,7 @@ export default class MapContainer extends Component {
             </MapView>
           </View>
 
-          <ScrollView style={{ flex: 1 }}>
+          <View style={{ flex: 1 }}>
             {!this.state.busStopCode && (
               <Image
                 source={{ uri: image }}
@@ -296,9 +296,10 @@ export default class MapContainer extends Component {
               />
             )}
 
-            { this.state.busStopCode && this.getBusTimes() }
-
-          </ScrollView>
+            <ScrollView style={{ flex: 1 }}>
+                { this.state.busStopCode && this.getBusTimes() }
+            </ScrollView>
+          </View>
         </View>
       );
     }
