@@ -1,6 +1,20 @@
 import React from 'react';
-import { Image, TextInput, Text, StyleSheet, KeyboardAvoidingView, ActivityIndicator } from 'react-native';
-import LoginButton from '../component/LoginButton';
+import {
+    Alert,
+    Image,
+    TextInput,
+    Text,
+    StyleSheet,
+    KeyboardAvoidingView,
+    ActivityIndicator,
+    StatusBar,
+    LayoutAnimation,
+    View,
+    TouchableOpacity,
+    TouchableWithoutFeedback,
+    Keyboard,
+    Dimensions
+    } from 'react-native';
 import firebaseDb from '../firebaseDb';
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
@@ -10,7 +24,7 @@ class LoginContainer extends React.Component {
 
     componentDidMount = () => {
         firebaseDb.auth().onAuthStateChanged(user => {
-            if (user) {
+            if (user && user.emailVerified === true) {
                 this.props.getUser(user.uid)
                 if (this.props.user !== null) {
                     this.props.navigation.navigate('Main Menu')
@@ -20,67 +34,122 @@ class LoginContainer extends React.Component {
     }
 
     render() {
+        LayoutAnimation.easeInEaseOut();
+
         return (
             <KeyboardAvoidingView
-                behavior={(Platform.OS === 'ios')? "padding" : null}
-                style={styles.container}>
+                behavior="padding"
+                style={styles.container}
+            >
+                <StatusBar barStyle="light-content"/>
                 <Image
-                    style={styles.image}
-                    source={require('../assets/in.png')}
+                    source={require("../assets/in.png")}
+                    style={{ marginTop: -25, alignItems: 'center'}}
                 />
 
-                <TextInput
-                    style={styles.textInput}
-                    placeholder="Email"
-                    onChangeText={ email => this.props.updateEmail(email) }
-                    value={ this.props.user.email }
-                    autoCapitalize='none'
-                />
+                <Text style={styles.greeting}> Welcome back. </Text>
+                <View style={styles.form}>
+                    <Text style={{ color: "#000000", fontSize: 14 }}>
+                        Email Address
+                    </Text>
+                    <TextInput
+                        style={styles.input}
+                        autoCapitalize="none"
+                        onChangeText={ email => this.props.updateEmail(email) }
+                        value={ this.props.user.email }
+                    />
 
-                <TextInput
-                    secureTextEntry
-                    style={styles.textInput}
-                    placeholder="Password"
-                    onChangeText={ password => this.props.updatePassword(password) }
-                    value={ this.props.user.password }
-                    autoCapitalize='none'
-                />
+                    <View style={{ marginTop: 32 }}>
+                        <Text style={{ color: "#000000", fontSize: 14 }}>Password</Text>
+                        <TextInput
+                            style={styles.input}
+                            secureTextEntry
+                            autoCapitalize="none"
+                            onChangeText={ password => this.props.updatePassword(password) }
+                            value={ this.props.user.password }
+                        />
+                    </View>
+                </View>
 
-                <LoginButton
-                    style={styles.loginButton}
-                    onPress= {() => {
-                        this.props.login();
-                    }}
-                />
+                <View>
+                    <TouchableOpacity
+                        style={styles.button}
+                        onPress={ this.props.login }
+                    >
+                        <Text style={{ color: "#FFF", fontSize: 16, fontWeight: "600" }}>
+                            Sign in
+                        </Text>
+                    </TouchableOpacity>
 
+                    <TouchableOpacity
+                        style={{ alignSelf: "center", marginTop: 32 }}
+                        onPress={() => {
+                            this.props.navigation.navigate("Sign Up")
+                        }}
+                    >
+                        <Text style={{ color: "#414959", fontSize: 14 }}>
+                            New to NUSvigate?{" "}
+                            <Text style={{ fontWeight: "500", color: "#ff8c00" }}>Sign up</Text>
+                        </Text>
+                    </TouchableOpacity>
+                </View>
             </KeyboardAvoidingView>
         )
     }
 }
 
+const width = Dimensions.get("window").width;
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#edd5c0'
+        alignItems: 'center'
+    },
+    greeting: {
+        marginTop: 20,
+        fontSize: 18,
+        fontWeight: "400",
+        textAlign: "center",
+        marginBottom: 50
+    },
+    form: {
+        marginBottom: 10,
+        marginHorizontal: 10,
+    },
+    input: {
+        borderBottomColor: "#8A8F9E",
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        height: 40,
+        fontSize: 15,
+        color: "#161F3D",
+        marginTop: 10,
+        width: width - 50
+    },
+    button: {
+        marginHorizontal: 35,
+        backgroundColor: "#ff8c00",
+        borderRadius: 4,
+        height: 52,
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 20
     },
     image: {
         marginBottom: 50,
         backgroundColor: '#edd5c0'
     },
-    textInput: {
-        borderWidth: 1,
-        borderColor: 'black',
-        fontSize: 20,
-        marginBottom: 8,
-        width: 200,
-        height: 30
+    errorMessage: {
+        height: 30,
+        alignItems: "center",
+        justifyContent: "center",
+        marginHorizontal: 30,
     },
-    loginButton: {
-        marginVertical: 20,
-        paddingBottom: 50
+    error: {
+        color: "#E9446A",
+        fontSize: 13,
+        fontWeight: "600",
+        textAlign: "center",
     },
     text: {
         fontSize: 20,

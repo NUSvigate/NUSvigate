@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, Image, StyleSheet, Dimensions, View, Text, Button } from 'react-native';
+import { SafeAreaView, Image, StyleSheet, Dimensions, View, Text, Button, TouchableOpacity } from 'react-native';
 import { StackActions } from '@react-navigation/native';
 import GPSMapButton from '../component/GPSMapButton';
 import LostFoundButton from '../component/LostFoundButton';
@@ -14,7 +14,8 @@ import firebaseDb from '../firebaseDb'
 class MainMenuContainer extends React.Component {
 
     state = {
-        email: this.props.user.email
+        email: this.props.user.email,
+        avatar: this.props.user.avatar
     }
 
     handleSignOut = () => {
@@ -23,21 +24,31 @@ class MainMenuContainer extends React.Component {
     }
 
     render() {
+        const { avatar, users, email } = this.state
+
         return (
             <SafeAreaView style={styles.container}>
+                <View style = {styles.logoutContainer}>
+                    <TouchableOpacity
+                        style = {styles.logout}
+                        onPress= {this.handleSignOut}
+                    >
+                        <Text style = {styles.logoutText}>
+                            Logout
+                        </Text>
+                    </TouchableOpacity>
+                </View>
 
                 <View style={styles.profileContainer}>
+                    <Image
+                        style={styles.avatar}
+                        source= {{ uri: this.state.avatar }}
+                    />
+
                     <Text style={styles.profileText}>
                         Name: { this.props.user.name } {"\n"}
                         Email: { this.props.user.email }
                     </Text>
-
-                    <Image
-                        style={styles.profileImage}
-                        source={require('../assets/Main.png')}
-                    />
-
-                    <Button title='Logout' onPress={this.handleSignOut} />
 
                 </View>
 
@@ -53,7 +64,7 @@ class MainMenuContainer extends React.Component {
                         style={styles.button}
                         onPress={() => {
                             this.props.navigation.navigate('Lost Found', {
-                                email: this.state.email
+                                email: this.props.user.email
                             })
                         }}>
                     </LostFoundButton>
@@ -71,7 +82,6 @@ class MainMenuContainer extends React.Component {
                             })
                         }}>
                     </FixesButton>
-
                 </SafeAreaView>
 
                 <SafeAreaView style={styles.textContainer}>
@@ -106,11 +116,11 @@ const styles = StyleSheet.create({
         height: windowHeight / 8,
         width: windowWidth / 6 * 5,
         flexDirection: 'row',
-        justifyContent: 'flex-end',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
         marginBottom: 20,
         backgroundColor: '#b9d6eb',
-        borderRadius: 20
+        borderRadius: 20,
     },
     buttonsContainer: {
         height: windowHeight / 8 * 3,
@@ -118,10 +128,17 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         flexDirection: 'row',
         flexWrap: 'wrap',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         alignItems: 'center',
         backgroundColor: '#b9d6eb',
         marginBottom: windowHeight / 40
+    },
+    logoutContainer: {
+        justifyContent: 'flex-end',
+        alignItems: 'flex-end',
+        width: windowWidth - 20,
+        height: windowHeight / 15,
+        marginBottom: 15
     },
     textContainer: {
         width: windowWidth / 6 * 5,
@@ -136,12 +153,11 @@ const styles = StyleSheet.create({
     },
     profileImage: {
         flexDirection: 'row',
-        justifyContent: 'flex-end'
-
+        justifyContent: 'flex-end',
     },
     profileText: {
-        textAlign: 'right',
-        flexWrap: 'wrap'
+        textAlign: 'left',
+        flexWrap: 'wrap',
     },
     button: {
         height: windowHeight / 7,
@@ -159,6 +175,24 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 14,
         textAlign: 'left'
+    },
+    avatar: {
+        width: 100,
+        height: 100,
+        borderRadius: 50,
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+    },
+    logout: {
+        width: 60,
+        height: 15,
+        borderRadius: 10,
+        marginRight: 10,
+    },
+    logoutText: {
+        textAlign: 'center',
+        color: 'orange',
+        fontSize: 14
     }
 })
 

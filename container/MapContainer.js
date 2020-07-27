@@ -1,24 +1,30 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View, Image, Dimensions } from "react-native";
+import React, { Component, useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  Dimensions,
+  ActivityIndicator,
+} from "react-native";
 
 import MapView, { PROVIDER_GOOGLE, Marker } from "react-native-maps";
 import * as Permissions from "expo-permissions";
 import Polyline from "@mapbox/polyline";
-
 import MapPlaceList from "../component/MapPlaceList";
 import { GOOGLE_API_KEY } from "react-native-dotenv";
 
-const faculties = require("../faculties.json");
-const accommodations = require("../accommodations.json");
-const food = require("../f&b.json");
-const lecture = require("../lecture.json");
-const tutorials = require("../tutorials.json");
-const fitness = require("../fitness.json");
-const others = require("../others.json");
-const retail = require("../retail.json");
-const seminar = require("../seminar.json");
-const study = require("../study.json");
-const auditoriums = require("../auditoriums.json");
+const faculties = require("../locations/locations.json");
+const accommodations = require("../locations/accommodations.json");
+const food = require("../locations/f&b.json");
+const lectures = require("../locations/lecture.json");
+const tutorials = require("../locations/tutorials.json");
+const study = require("../locations/study.json");
+const auditoriums = require("../locations/auditoriums.json");
+const seminarRooms = require("../locations/seminar.json");
+const others = require("../locations/others.json");
+const busStops = require("../locations/busStops.json");
 
 const { width, height } = Dimensions.get("screen");
 
@@ -31,48 +37,40 @@ export default class MapContainer extends Component {
     name: null,
     color: null,
     image: null,
+    busStopCode: null,
+    busArrival1: null,
+    busArrival2: null,
+    busArrival3: null,
   };
 
   async componentDidMount() {
     const placeType = this.props.route.params.locations;
     if (placeType === "accommodations") {
-      this.setState({ locations: accommodations, color: "blue" });
+      this.setState({ locations: accommodations });
     }
     if (placeType === "food") {
-      this.setState({ locations: food, color: "red" });
+      this.setState({ locations: food });
     }
-    if (placeType === "lecture") {
-      this.setState({ locations: lecture, color: "navy" });
+    if (placeType === "lectures") {
+      this.setState({ locations: lectures });
     }
     if (placeType === "tutorials") {
-      this.setState({ locations: tutorials, color: "turquoise" });
-    }
-    if (placeType === "faculties") {
-      this.setState({ locations: faculties, color: "gold" });
-    }
-    if (placeType === "others") {
-      this.setState({ locations: others, color: "green" });
-    }
-    if (placeType === "retail") {
-      this.setState({ locations: retail, color: "lightskyblue" });
-    }
-    if (placeType === "audi") {
-      this.setState({ locations: audi, color: "orange" });
-    }
-    if (placeType === "lecture") {
-      this.setState({ locations: lecture, color: "navy" });
-    }
-    if (placeType === "seminar") {
-      this.setState({ locations: seminar, color: "purple" });
+      this.setState({ locations: tutorials });
     }
     if (placeType === "study") {
-      this.setState({ locations: study, color: "plum" });
+      this.setState({ locations: study });
     }
-    if (placeType === "tutorials") {
-      this.setState({ locations: tutorials, color: "turquoise" });
+    if (placeType === "auditoriums") {
+      this.setState({ locations: auditoriums });
     }
-    if (placeType === "fitness") {
-      this.setState({ locations: fitness, color: "tan" });
+    if (placeType === "seminarRooms") {
+      this.setState({ locations: seminarRooms });
+    }
+    if (placeType === "others") {
+      this.setState({ locations: others });
+    }
+    if (placeType === "busStops") {
+      this.setState({ locations: busStops });
     }
 
     const { status } = await Permissions.getAsync(Permissions.LOCATION);
@@ -97,6 +95,43 @@ export default class MapContainer extends Component {
       },
       this.mergeCoords
     );
+
+    const url =
+        "http://datamall2.mytransport.sg/ltaodataservice/BusArrivalv2?BusStopCode=" +
+        this.state.busStopCode;
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("GET", url);
+        xhr.setRequestHeader("AccountKey", "V5OA2L1rRBSCReQl4uMvyA==");
+        xhr.send();
+
+        let busArrival = [];
+
+        xhr.onload = () => {
+
+          if (xhr.status === 200) {
+              console.log("status 200");
+
+              console.log("================= RESULTS =====================\n");
+
+              const obj = JSON.parse(xhr.responseText);
+              const services = obj.Services;
+
+              for (let i = 0; i < services.length; i++) {
+                  busArrival =
+                      [
+                          services[i].ServiceNo,
+                          services[i].NextBus.EstimatedArrival,
+                          services[i].NextBus2.EstimatedArrival
+                      ]
+              }
+          } else {
+              console.log(`error ${xhr.status} ${xhr.statusText}`);
+          }
+        }
+
+        this.setState({ busArrival1: busArrival })
   }
 
   mergeCoords = () => {
@@ -111,7 +146,7 @@ export default class MapContainer extends Component {
     }
   };
 
-  async getDirections(startLoc, desLoc) {
+  getDirections = async (startLoc, desLoc) => {
     try {
       const resp = await fetch(
         `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&mode=walking&key=AIzaSyDvMevOCENhN4DLzaT_bn60NqB2bOnLau0`
@@ -141,6 +176,12 @@ export default class MapContainer extends Component {
     const {
       coords: { latitude, longitude },
     } = location;
+
+    const placeType = this.props.route.params.locations;
+    if (placeType === "busStops") {
+      this.setState({ busStopCode: location.busStopCode })
+    }
+
     this.setState(
       {
         name: location.name,
@@ -151,8 +192,13 @@ export default class MapContainer extends Component {
       },
       this.mergeCoords
     );
-    console.log(this.state.image);
   };
+
+  getBusTimes = () => {
+
+
+      return (<Text style={styles.busArrival}> { this.state.busArrival1 } </Text>)
+  }
 
   renderMarkers = () => {
     const { locations } = this.state;
@@ -186,6 +232,7 @@ export default class MapContainer extends Component {
       distance,
       latitude,
       longitude,
+      busStopCode,
       destination,
     } = this.state;
 
@@ -234,32 +281,31 @@ export default class MapContainer extends Component {
             </MapView>
           </View>
 
-          <View style={{ flex: 1 }}>
-            <Image
-              source={{ uri: image }}
-              style={{
-                flex: 1,
-                width: width * 0.95,
-                alignSelf: "center",
-                height: height * 0.2,
-                position: "absolute",
-                bottom: height * 0.05,
-              }}
-            />
-          </View>
+          <ScrollView style={{ flex: 1 }}>
+            {!this.state.busStopCode && (
+              <Image
+                source={{ uri: image }}
+                style={{
+                  flex: 1,
+                  width: width * 0.95,
+                  alignSelf: "center",
+                  height: height * 0.2,
+                  position: "absolute",
+                  bottom: height * 0.05,
+                }}
+              />
+            )}
+
+            { this.state.busStopCode && this.getBusTimes() }
+
+          </ScrollView>
         </View>
       );
     }
 
     return (
-      <View
-        styles={{
-          flex: 1,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Text>We need your permission!</Text>
+      <View styles={styles.container}>
+        <ActivityIndicator size={150} />
       </View>
     );
   }
@@ -280,4 +326,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
+  busArrival: {
+    textAlign: 'justify'
+  }
 });

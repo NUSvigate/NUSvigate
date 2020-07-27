@@ -157,6 +157,15 @@ export default class FoundItemFilterContainer extends Component {
         return (
             <View style = {styles.container}>
                 <View style = {styles.dropdownContainer}>
+                    <Text style = {{textAlign: 'left', marginLeft: 20}}> Name of item: </Text>
+                    <TextInput
+                        style={styles.textInput}
+                        onChangeText = {text => {
+                            this.setState({name: text});
+                        }}
+                        value = {this.state.name}
+                    />
+
                     <Dropdown
                         containerStyle = {styles.dropdown}
                         data = {categories}
@@ -167,6 +176,16 @@ export default class FoundItemFilterContainer extends Component {
                         onChangeText = {(value, data, index) => {
                             this.setCategoryStateValue(value)
                         }}
+                    />
+
+                    <Text style = {{ marginLeft: 20 }}> Item Description: </Text>
+                    <TextInput
+                        style={styles.description}
+                        multiline = {true}
+                        onChangeText = { text => {
+                            this.setState({ description: text });
+                        }}
+                        value = { this.state.description }
                     />
 
                     <Dropdown
@@ -183,43 +202,24 @@ export default class FoundItemFilterContainer extends Component {
                 </View>
 
                 <View style = {styles.imageContainer}>
-                    <TextInput
-                        style={styles.textInput}
-                        placeholder = 'Name of item'
-                        onChangeText = {text => {
-                            this.setState({name: text});
-                        }}
-                        value = {this.state.name}
-                    />
+
+                    { image_uri && (
+                        <Image
+                            source = {{ uri: image_uri }}
+                            style = {{ width: 300, height: 200, marginBottom: 20}}
+                        />
+                    )}
 
                     <Button
                         title = "Choose image..."
                         onPress = {this.onChooseImagePress}
                     />
+                    <Text style = {{ marginBottom: 20 }}> Please submit an image of the item to be able to continue. </Text>
 
-                    { image_uri && (
-                        <Image
-                            source = {{ uri: image_uri }}
-                            style = {{ width: 300, height: 200 }}
-                        />
-                    )}
-
+                     <SubmitItemButton
+                        onPress = {this.submitItem}
+                     />
                 </View>
-
-                <Text> Item Description: </Text>
-                <TextInput
-                    style={styles.description}
-                    multiline = {true}
-                    placeholder = "Item Description"
-                    onChangeText = { text => {
-                        this.setState({ description: text });
-                    }}
-                    value = { this.state.description }
-                />
-
-                <SubmitItemButton
-                    onPress = {this.submitItem}
-                />
             </View>
         )
     }
@@ -236,10 +236,11 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     dropdownContainer: {
-        height: height/3.5,
+        height: height / 3.5,
         width: width,
         justifyContent: 'center',
-        alignItems: 'center',
+        alignItems: 'flex-start',
+        marginBottom: 50
     },
     imageContainer: {
         height: height / 3,
@@ -250,19 +251,21 @@ const styles = StyleSheet.create({
     dropdown: {
         width: width / 1.2,
         marginHorizontal: 20,
-        marginBottom: 5
+        marginBottom: 20
     },
     textInput: {
         height: 25,
-        width: width / 2,
+        width: width / 1.2,
         borderColor: 'black',
         borderWidth: 1,
+        marginLeft: 20
     },
     description: {
-        height: height / 15,
-        width: width - 90,
+        height: height / 10,
+        width: width / 1.2,
         borderColor: 'black',
         borderWidth: 1,
-        marginBottom: 30
-    },
+        marginBottom: 20,
+        marginLeft: 20
+    }
 })

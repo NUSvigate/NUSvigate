@@ -160,6 +160,7 @@ export default class ServicesFinancialAidContainer extends Component {
                         For non-Singaporean students, you are advised to use our
                         http://www.nus.edu.sg/oam/financial-aid/financial-needs-calculator
                         to estimate your out-of-pocket expenses.
+                        {'\n'}
                     </Text>
                 </Hyperlink>
             </ScrollView>
