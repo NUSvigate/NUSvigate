@@ -1,0 +1,142 @@
+[
+  {
+    "name": "NUS School of Computing",
+    "address": "NUS School of Computing, COM1, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.29479,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM",
+    "color": "gold"
+  },
+  {
+    "name": "NUS U-Town",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.772392
+    },
+    "image_url": "https://media.timeout.com/images/105387553/630/472/image.jp",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Arts and Social Sciences",
+    "address": "5 Arts Link, 5 The, Block AS7, Level, Shaw Foundation Building, 117570",
+    "coords": {
+      "latitude": 1.294214,
+      "longitude": 103.771112
+    },
+    "image_url": "https://assets.change.org/photos/6/sa/hm/iGSaHMeegvelhyR-800x450-noPad.jpg?1571151506",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Business School",
+    "address": "15 Kent Ridge Dr, Singapore 119245",
+    "coords": {
+      "latitude": 1.29309,
+      "longitude": 103.77343
+    },
+    "image_url": "https://i1.wp.com/www.jenwanderstories.com/wp-content/uploads/2016/04/nus-business.jpg?fit=2464%2C1632&ssl=1",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Dentistry",
+    "address": "9 Lower Kent Ridge Rd, Level 10, Singapore 119085",
+    "coords": {
+      "latitude": 1.29309,
+      "longitude": 103.77343
+    },
+    "image_url": "https://qswownews.com/wp-content/uploads/2018/01/NUS-Dentistry.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "NUS School of Design and Environment",
+    "address": " 4 Architecture Dr, Singapore 117566",
+    "coords": {
+      "latitude": 1.2973,
+      "longitude": 103.77108
+    },
+    "image_url": "https://urbannext.net/wp-content/uploads/2019/03/serie-architects_school-of-design-and-environment_02.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Yong Loo Lin School of Medicine",
+    "address": "10 Medical Dr, Singapore 117597",
+    "coords": {
+      "latitude": 1.29536,
+      "longitude": 103.78096
+    },
+    "image_url": "https://nusmedicine.nus.edu.sg/images/resources/content/alumni/alumni-banner.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Engineering",
+    "address": "9 Engineering Drive 1, #07-26 EA, Singapore 117575",
+    "coords": {
+      "latitude": 1.30034,
+      "longitude": 103.7706
+    },
+    "image_url": "https://www.eng.nus.edu.sg/wp-content/uploads/2019/02/mit_report_feature.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Yong Siew Toh Conservatory of Music",
+    "address": "3 Conservatory Drive, 117376",
+    "coords": {
+      "latitude": 1.30235,
+      "longitude": 103.77291
+    },
+    "image_url": "https://www.primestructures.com.sg/wp-content/uploads/2012/07/NUSYST1-1024x835.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.77926
+    },
+    "image_url": "https://www.nuhs.edu.sg/research/Research-Programmes/PublishingImages/SSHSPH_Tahir%20Foundation%20Building.png",
+    "color": "gold"
+  },
+  {
+    "name": "Lee Kuan Yew School of Public Policy",
+    "address": " 469C Bukit Timah Rd, National University of Singapore, Singapore 259772",
+    "coords": {
+      "latitude": 1.32337,
+      "longitude": 103.80811
+    },
+    "image_url": "https://lkyspp.nus.edu.sg/images/default-source/about-us-media/vision-mission---governing-board.jpg?sfvrsn=d915900b_2",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Biological Sciences",
+    "address": "16 Science Drive 4, Singapore 117558",
+    "coords": {
+      "latitude": 1.29775,
+      "longitude": 103.77618
+    },
+    "image_url": "https://www.google.com/maps/place/16+Science+Drive+4,+Singapore+117558/@1.2965798,103.7789275,3a,75y,206.38h,90t/data=!3m6!1e1!3m4!1sNmu17DmfQ_y72cZuejnMQA!2e0!7i16384!8i8192!4m5!3m4!1s0x31da1a56f6a2af19:0x38fff7feca680351!8m2!3d1.29563!4d103.778434",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Science",
+    "address": "6 Science Drive 2, Block S16, level 9, Singapore 117546",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.77926
+    },
+    "image_url": "https://miro.medium.com/max/800/1*1uOi7kwwIq_POfXtQSx1og.jpeg",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Law",
+    "address": "469G Bukit Timah Rd, Singapore 259776",
+    "coords": {
+      "latitude": 1.31911,
+      "longitude": 103.816994
+    },
+    "image_url": "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2017/10/31/bp_nus_311017_62.jpg?itok=cmCGfq1u&timestamp=1509418612",
+    "color": "gold"
+  }
+]

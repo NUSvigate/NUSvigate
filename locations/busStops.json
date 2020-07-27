@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Information Technology",
+    "address": "2 Engineering Drive 4, Singapore 117584" ,
+    "coords": {
+      "latitude": 1.297511,
+      "longitude": 103.772671
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16189
+  },
+  {
+    "name": "Ctrl Lib",
+    "address": "30C Kent Ridge Cres, Singapore 119264" ,
+    "coords": {
+      "latitude": 1.296836,
+      "longitude": 103.772564
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16181
+  },
+  {
+    "name": "Yusof Ishak Hse",
+    "address": "Kent Ridge Cres" ,
+    "coords": {
+      "latitude": 1.299088,
+      "longitude": 103.774377
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16171
+  },
+  {
+    "name": "Opp Yusof Ishak Hse",
+    "address": "17 Kent Ridge Cres, Singapore 119277" ,
+    "coords": {
+      "latitude": 1.299217,
+      "longitude": 103.774194
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16179
+  },
+  {
+    "name": "Opp University Health Ctr",
+    "address": "31 Lower Kent Ridge Road" ,
+    "coords": {
+      "latitude": 1.299013,
+      "longitude": 103.775589
+    },
+    "color": "lightseagreen",
+    "busStopCode": 18321
+  },
+  {
+    "name": "University Health Ctr",
+    "address": "8 Sports Drive 1, Singapore 117564" ,
+    "coords": {
+      "latitude": 1.299185,
+      "longitude": 103.776093
+    },
+    "color": "lightseagreen",
+    "busStopCode": 18329
+  },
+  {
+    "name": "NUS Fac of Design & Env",
+    "address": "5-10 Architecture Drive" ,
+    "coords": {
+      "latitude": 1.296677,
+      "longitude": 103.770750
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16199
+  },
+  {
+    "name": "Blk S12",
+    "address": "Lower Kent Ridge Road" ,
+    "coords": {
+      "latitude": 1.297715,
+      "longitude": 103.777874
+    },
+    "color": "lightseagreen",
+    "busStopCode": 18311
+  },
+  {
+    "name": "Opp NUS Fac of Architect",
+    "address": "Architecture Drive" ,
+    "coords": {
+      "latitude": 1.296492,
+      "longitude": 103.770252
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16191
+  },
+  {
+    "name": "Opp University Hall",
+    "address": "Opp University Hall" ,
+    "coords": {
+      "latitude": 1.297747,
+      "longitude": 103.778207
+    },
+    "color": "lightseagreen",
+    "busStopCode": 18319
+  },
+  {
+    "name": "Opp Yusof Ishak Hse",
+    "address": "17 Kent Ridge Cres, Singapore 119277" ,
+    "coords": {
+      "latitude": 1.299217,
+      "longitude": 103.774194
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16179
+  },
+  {
+    "name": "Clementi Rd - Kent Ridge Ter",
+    "address": "Queenstown" ,
+    "coords": {
+      "latitude": 1.294591,
+      "longitude": 103.769936
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16009
+  },
+  {
+    "name": "Bef Kent Ridge Ter",
+    "address": "Clementi Rd" ,
+    "coords": {
+      "latitude": 1.295695,
+      "longitude": 103.769734
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16139
+  },
+  {
+    "name": "Opp SIT Dover",
+    "address": "AYE" ,
+    "coords": {
+      "latitude": 1.299495,
+      "longitude": 103.779409
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16091
+  },
+  {
+    "name": "Pasir Panjang Rd - Heng Mui Keng Terr",
+    "address": "2A Heng Mui Keng Terrace, Singapore 119601" ,
+    "coords": {
+      "latitude": 1.290879,
+      "longitude": 103.773690
+    },
+    "color": "lightseagreen",
+    "busStopCode": 16069
+  },
+  {
+    "name": "Lim Seng Tjoe Bldg",
+    "address": "Queenstown" ,
+    "coords": {
+      "latitude": 1.297655,
+      "longitude": 103.780947
+    },
+    "color": "lightseagreen",
+    "busStopCode": 18301
+  }
+]

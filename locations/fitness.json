@@ -1,0 +1,52 @@
+[
+  {
+    "name": "NUS Sports Hall Fitness Gym",
+    "address": "2 sports drive, Singapore 117561 Sports Drive 1, Singapore 117561",
+    "coords": {
+      "latitude": 1.29958,
+      "longitude": 103.77538
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FNUS%20Sports%20Hall%20Fitness%20Gym.jpg?alt=media&token=95211ca7-820f-4499-900c-41fcc1077753",
+    "color": "tan"
+  },
+  {
+    "name": "NUS Swimming Pool",
+    "address": "21 Lower Kent Ridge Road, 119077",
+    "coords": {
+      "latitude": 1.29799,
+      "longitude": 103.77506
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FNUS%20Swimming%20Pool%20.jpg?alt=media&token=e230f914-c654-4c3e-83a9-3c4988b60cd5",
+    "color": "tan"
+  },
+  {
+    "name": "Utown infinity pool",
+    "address": "2 College Ave West",
+    "coords": {
+      "latitude": 1.39159,
+      "longitude": 103.89769
+    },
+    "image_url": "https://leedsuniabroad.files.wordpress.com/2017/08/singapore.png?w=748",
+    "color": "tan"
+  },
+  {
+    "name": "NUS Sports Hall",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29972222,
+      "longitude": 103.77527778
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FSports%20Hall.jpg?alt=media&token=cb26ba0c-1bc2-40c3-962d-fa258ad6ae0a",
+    "color": "tan"
+  },
+  {
+    "name": "NUS Tennis Court",
+    "address": "20 Lower Kent Ridge Road, 119080",
+    "coords": {
+      "latitude": 1.2991,
+      "longitude": 103.77638
+    },
+    "image_url": "https://liga.tennis/public/cache/images/6/2/8/4/ea9bd849ac9e04d9f3ae35d2a84041f5_1920_5760.jpg",
+    "color": "tan"
+  }
+]

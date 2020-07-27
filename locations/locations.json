@@ -1,0 +1,1342 @@
+[
+  {
+    "name": "Kent Ridge MRT station",
+    "address": "301 South Buona Vista Road, 118177",
+    "coords": {
+      "latitude": 1.29326,
+      "longitude": 103.78447
+    },
+    "image_url": "https://landtransportguru.net/web/wp-content/uploads/2016/05/ccl_cc24_mar16-5.jpg",
+    "color": "green"
+  },
+  {
+    "name": "NUS School of Computing",
+    "address": "NUS School of Computing, COM1, 13 Computing Drive, 117417",
+    "coords": {
+      "latitude": 1.29479,
+      "longitude": 103.774071
+    },
+    "image_url": "https://www.google.com/search?q=nus+school+of+computing+l&hl=en&sxsrf=ALeKk01XLaMA9k7vICD_Rm0WSW1pR_Xz8w:1590994895491&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjb4dbsheDpAhVbSX0KHYryBPMQ_AUoAXoECBQQAw&biw=1440&bih=821#imgrc=oSdb4xi1U9qwqM",
+    "color": "gold"
+  },
+  {
+    "name": "NUS U-Town",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.772392
+    },
+    "image_url": "https://media.timeout.com/images/105387553/630/472/image.jp",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Arts and Social Sciences",
+    "address": "5 Arts Link, 5 The, Block AS7, Level, Shaw Foundation Building, 117570",
+    "coords": {
+      "latitude": 1.294214,
+      "longitude": 103.771112
+    },
+    "image_url": "https://assets.change.org/photos/6/sa/hm/iGSaHMeegvelhyR-800x450-noPad.jpg?1571151506",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Business School",
+    "address": "15 Kent Ridge Dr, Singapore 119245",
+    "coords": {
+      "latitude": 1.29309,
+      "longitude": 103.77343
+    },
+    "image_url": "https://i1.wp.com/www.jenwanderstories.com/wp-content/uploads/2016/04/nus-business.jpg?fit=2464%2C1632&ssl=1",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Dentistry",
+    "address": "9 Lower Kent Ridge Rd, Level 10, Singapore 119085",
+    "coords": {
+      "latitude": 1.29309,
+      "longitude": 103.77343
+    },
+    "image_url": "https://qswownews.com/wp-content/uploads/2018/01/NUS-Dentistry.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "NUS School of Design and Environment",
+    "address": " 4 Architecture Dr, Singapore 117566",
+    "coords": {
+      "latitude": 1.2973,
+      "longitude": 103.77108
+    },
+    "image_url": "https://urbannext.net/wp-content/uploads/2019/03/serie-architects_school-of-design-and-environment_02.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Yong Loo Lin School of Medicine",
+    "address": "10 Medical Dr, Singapore 117597",
+    "coords": {
+      "latitude": 1.29536,
+      "longitude": 103.78096
+    },
+    "image_url": "https://nusmedicine.nus.edu.sg/images/resources/content/alumni/alumni-banner.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Engineering",
+    "address": "9 Engineering Drive 1, #07-26 EA, Singapore 117575",
+    "coords": {
+      "latitude": 1.30034,
+      "longitude": 103.7706
+    },
+    "image_url": "https://www.eng.nus.edu.sg/wp-content/uploads/2019/02/mit_report_feature.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Yong Siew Toh Conservatory of Music",
+    "address": "3 Conservatory Drive, 117376",
+    "coords": {
+      "latitude": 1.30235,
+      "longitude": 103.77291
+    },
+    "image_url": "https://www.primestructures.com.sg/wp-content/uploads/2012/07/NUSYST1-1024x835.jpg",
+    "color": "gold"
+  },
+  {
+    "name": "Saw Swee Hock School Of Public Health",
+    "address": "12 Science Drive 2, #10-01, Singapore 117549",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.77926
+    },
+    "image_url": "https://www.nuhs.edu.sg/research/Research-Programmes/PublishingImages/SSHSPH_Tahir%20Foundation%20Building.png",
+    "color": "gold"
+  },
+  {
+    "name": "Lee Kuan Yew School of Public Policy",
+    "address": " 469C Bukit Timah Rd, National University of Singapore, Singapore 259772",
+    "coords": {
+      "latitude": 1.32337,
+      "longitude": 103.80811
+    },
+    "image_url": "https://lkyspp.nus.edu.sg/images/default-source/about-us-media/vision-mission---governing-board.jpg?sfvrsn=d915900b_2",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Biological Sciences",
+    "address": "16 Science Drive 4, Singapore 117558",
+    "coords": {
+      "latitude": 1.29775,
+      "longitude": 103.77618
+    },
+    "image_url": "https://www.google.com/maps/place/16+Science+Drive+4,+Singapore+117558/@1.2965798,103.7789275,3a,75y,206.38h,90t/data=!3m6!1e1!3m4!1sNmu17DmfQ_y72cZuejnMQA!2e0!7i16384!8i8192!4m5!3m4!1s0x31da1a56f6a2af19:0x38fff7feca680351!8m2!3d1.29563!4d103.778434",
+    "color": "gold"
+  },
+  {
+    "name": "NUS Faculty of Science",
+    "address": "6 Science Drive 2, Block S16, level 9, Singapore 117546",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.77926
+    },
+    "image_url": "https://miro.medium.com/max/800/1*1uOi7kwwIq_POfXtQSx1og.jpeg",
+    "color": "gold"
+  },
+  {
+    "name": "University Hall",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.297136,
+      "longitude": 103.777527
+    },
+    "image_url": "https://live.staticflickr.com/121/369062159_c0a2d1c6cb_b.jpg",
+    "color": "green"
+  },
+  {
+    "name": "NUS Faculty of Law",
+    "address": "469G Bukit Timah Rd, Singapore 259776",
+    "coords": {
+      "latitude": 1.31911,
+      "longitude": 103.816994
+    },
+    "image_url": "https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2017/10/31/bp_nus_311017_62.jpg?itok=cmCGfq1u&timestamp=1509418612",
+    "color": "gold"
+  },
+  {
+    "name": "Multi Purpose Sport Hall",
+    "address": "2 sports drive, Singapore 117561 Sports Drive 1, Singapore 117561",
+    "coords": {
+      "latitude": 1.29891,
+      "longitude": 103.77535
+    },
+    "image_url": "https://fastly.4sqi.net/img/general/600x600/paT5EQFEi96vwCUKF8OqAoVuWTBTp28ScajMxmCnCss.jpg",
+    "color": "green"
+  },
+  {
+    "name": "LT 28",
+    "address": "LT 28, Lower Kent Ridge Road",
+    "coords": {
+      "latitude": 1.29891,
+      "longitude": 103.77535
+    },
+    "image_url": "https://fastly.4sqi.net/img/general/600x600/paT5EQFEi96vwCUKF8OqAoVuWTBTp28ScajMxmCnCss.jpg",
+    "color": "navy"
+  },
+  {
+    "name": "LT 29",
+    "address": "LT 29,Lower Kent Ridge Road",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.77574
+    },
+    "image_url": "https://fastly.4sqi.net/img/general/600x600/308951_YRWrCijeBAuqBtEupvlwXhNa5CT9ZqXRFbfnTamLzw0.jpg",
+    "color": "navy"
+  },
+  {
+    "name": "LT 27",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29879,
+      "longitude": 103.77567
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2027.jpg?alt=media&token=204b5e7a-4709-4f2f-aac6-db36b690755a",
+    "color": "navy"
+  },
+  {
+    "name": "Science Library",
+    "address": "10 Science Drive 2, Blk S6, Singapore 117548",
+    "coords": {
+      "latitude": 1.2968,
+      "longitude": 103.77919
+    },
+    "image_url": "https://libportal.nus.edu.sg/media/media/SC_facade.jpg",
+    "color": "plum"
+  },
+  {
+    "name": "LT 21",
+    "address": "8 Science Drive 2, Singapore 117547",
+    "coords": {
+      "latitude": 1.29591,
+      "longitude": 103.77902
+    },
+    "image_url": "https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101027/112815900-stock-vector-no-image-available-icon-flat-vector.jpg?ver=6",
+    "color": "navy"
+  },
+  {
+    "name": "LT 1",
+    "address": "5 Engineering Drive 2, Singapore 117579",
+    "coords": {
+      "latitude": 1.29963,
+      "longitude": 103.77157
+    },
+    "image_url": "https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101027/112815900-stock-vector-no-image-available-icon-flat-vector.jpg?ver=6",
+    "color": "navy"
+  },
+  {
+    "name": "LT 7",
+    "address": "9 Engineering Drive 1, National University of Singapore, Singapore 117575",
+    "coords": {
+      "latitude": 1.30034,
+      "longitude": 103.770599
+    },
+    "image_url": "https://live.staticflickr.com/2526/4189170521_668aea3291_z.jpg",
+    "color": "navy"
+  },
+  {
+    "name": "LT 4",
+    "address": "10 Kent Ridge Crescent, 119260",
+    "coords": {
+      "latitude": 1.2992,
+      "longitude": 103.77369
+    },
+    "image_url": "https://us.123rf.com/450wm/pavelstasevich/pavelstasevich1811/pavelstasevich181101027/112815900-stock-vector-no-image-available-icon-flat-vector.jpg?ver=6",
+    "color": "navy"
+  },
+  {
+    "name": "NUS Coop @ Lt 27",
+    "address": "27 Science Drive 1 Lecture Theatre, LT27, 117541",
+    "coords": {
+      "latitude": 1.29694,
+      "longitude": 103.78053
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FSci%20-%20NUS%20COOP.jpg?alt=media&token=e724aeb0-e3b8-467b-942c-d907f450017d",
+    "color": "tomato"
+  },
+  {
+    "name": "Science - Platypus Food Bar",
+    "address": "12 Science Drive 2, Singapore 117549",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.779259
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FFood%20Bars%20-%20by%20platypus.jpg?alt=media&token=9ea27a04-aeca-4954-a704-a53de164b5ba",
+    "color": "red"
+  },
+  {
+    "name": "Science - Arise & Shine",
+    "address": "12 Science Drive 2, Singapore 117549",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.779259
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FArise%20%26%20Shine.jpg?alt=media&token=60796aac-85c9-4a93-9ebc-ba9b2337fdfd",
+    "color": "red"
+  },
+  {
+    "name": "LT 31",
+    "address": " S16, Faculty of Science, Lower Kent Ridge Rd",
+    "coords": {
+      "latitude": 1.29722,
+      "longitude": 103.77987
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2031.jpg?alt=media&token=bf7469ae-17f4-4120-82a1-0ec11a8c5c7f",
+    "color": "navy"
+  },
+  {
+    "name": "Ridge View Residential College",
+    "address": "25 Lower Kent Ridge Rd, Singapore 119081",
+    "coords": {
+      "latitude": 1.29623,
+      "longitude": 103.783279
+    },
+    "image_url": "https://uci.nus.edu.sg/ceu/wp-content/uploads/sites/4/2020/05/Ridge-View-Residential-College-e1588585393926-1024x445.jpg",
+    "color": "blue"
+  },
+  {
+    "name": "College of Alice & Peter Tan (CAPT)",
+    "address": "8 College Ave E, #B1-50, Singapore 138615",
+    "coords": {
+      "latitude": 1.30756,
+      "longitude": 103.77323
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FCAPT.jpg?alt=media&token=dcba5bc5-dcdd-4d06-97c7-854d563dfbf1",
+    "color": "blue"
+  },
+  {
+    "name": "Cinnamon College",
+    "address": "18 College Ave E, Cinnamon West Learn Lobe, Singapore 138593",
+    "coords": {
+      "latitude": 1.30681,
+      "longitude": 103.773018
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FCinnamon%20college.jpg?alt=media&token=c325a894-37ce-4e26-9812-88572b1b8789",
+    "color": "blue"
+  },
+  {
+    "name": "Residential College 4",
+    "address": "6 College Avenue East, #01-01, University Town, National University of Singapore, 138614",
+    "coords": {
+      "latitude": 1.30816,
+      "longitude": 103.77336
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FRC%204.jpg?alt=media&token=17dc5df3-9a8e-42a7-8ba8-0f7fc77affa3",
+    "color": "blue"
+  },
+  {
+    "name": "Tembusu College",
+    "address": "28 College Ave E, #B1-01, Singapore 138598",
+    "coords": {
+      "latitude": 1.30591,
+      "longitude": 103.77381
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FTembusu%20College.jpg?alt=media&token=7382817a-b1b5-42f8-824d-8c4cc26f809d",
+    "color": "blue"
+  },
+  {
+    "name": "Eusoff Hall",
+    "address": "10 Kent Ridge Drive, National University of Singapore, Singapore 119242",
+    "coords": {
+      "latitude": 1.29274,
+      "longitude": 103.77134
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FeusoffHall.jpeg?alt=media&token=871a12bb-3c48-4ea7-bccf-640ec112429c",
+    "color": "blue"
+  },
+  {
+    "name": "King Edward VII Hall",
+    "address": "1A Kent Ridge Rd, Singapore 119224",
+    "coords": {
+      "latitude": 1.29284,
+      "longitude": 103.78053
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2Fke7.jpg?alt=media&token=194da0ae-e32c-4563-9a94-7dc1e83198c5",
+    "color": "blue"
+  },
+  {
+    "name": "Kent Ridge Hall",
+    "address": "10 Heng Mui Keng Terrace, Singapore 119617",
+    "coords": {
+      "latitude": 1.2918,
+      "longitude": 103.77442
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FkentRidgeHall.jpg?alt=media&token=bddb214c-ad7f-45b7-98fa-4caa9b338e0f",
+    "color": "blue"
+  },
+  {
+    "name": "Prince George's Park House",
+    "address": "Block 20, #01-23, 35 Prince George's Park, Singapore 118429",
+    "coords": {
+      "latitude": 1.2908,
+      "longitude": 103.78026
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FpgpH.jpg?alt=media&token=089a9076-8c02-417e-b3fd-78909059fbc1",
+    "color": "blue"
+  },
+  {
+    "name": "Prince George's Park Residences",
+    "address": "Singapore Prince George's Park",
+    "coords": {
+      "latitude": 1.29242,
+      "longitude": 103.77969
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FpgpR.jpg?alt=media&token=bba49040-5b67-437a-8e4f-f92c5fb3a653",
+    "color": "blue"
+  },
+  {
+    "name": "Raffles Hall",
+    "address": "19 Kent Ridge Crescent, Singapore 119278",
+    "coords": {
+      "latitude": 1.29797,
+      "longitude": 103.77319
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FrafflesHall.jpg?alt=media&token=21acc1be-ab97-4d0d-a0a5-bc2017f80ecd",
+    "color": "blue"
+  },
+  {
+    "name": "Sheares Hall",
+    "address": "20 Heng Mui Keng Terrace, Singapore 119618",
+    "coords": {
+      "latitude": 1.29066,
+      "longitude": 103.77731
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FshearesHall.jpg?alt=media&token=86242ab9-5ac5-478c-a6f8-47dc84ab9273",
+    "color": "blue"
+  },
+  {
+    "name": "Temasek Hall",
+    "address": "12 Kent Ridge Dr, Singapore 119243",
+    "coords": {
+      "latitude": 1.29354,
+      "longitude": 103.77007
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Faccommodations%2FtemasekHall.jpg?alt=media&token=41f9a3c6-f59b-4661-803f-39d57cbffd09",
+    "color": "blue"
+  },
+  {
+    "name": "UTown Auditorium 1, NUS",
+    "address": "1 Create Way Level 1, Town Plaza, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUTOWN-%20audi%201.jpg?alt=media&token=1e82e9b2-8d01-495d-913d-0824300e49de",
+    "color": "orange"
+  },
+  {
+    "name": "UTown Auditorium 2, NUS",
+    "address": "2 College Ave West, Level 1 Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.77239
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUTOWN%20-%20audi%202.jpg?alt=media&token=703b3ba8-404f-4046-a924-00bd6fcff987",
+    "color": "orange"
+  },
+  {
+    "name": "Auditorium 3, UTown",
+    "address": "College Avenue East Singapore",
+    "coords": {
+      "latitude": 1.30661,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FAudi%2FUtown%20-%20Audi%203.jpg?alt=media&token=505066b3-7ea4-40df-9f17-fc8e0199932b",
+    "color": "orange"
+  },
+  {
+    "name": "COM - TR 10",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FTutorial%20Rooms%2FTR%2010.jpg?alt=media&token=4dd31045-b977-46ac-98d1-35d6f2f2847e",
+    "color": "turquoise"
+  },
+  {
+    "name": "COM - TR 11",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FTutorial%20Rooms%2FTR%2011.jpg?alt=media&token=5462b545-73c6-4db9-acb0-d3406258e4ed",
+    "color": "turquoise"
+  },
+  {
+    "name": "NUS Central Library",
+    "address": "12 Kent Ridge Cres, Singapore 119275",
+    "coords": {
+      "latitude": 1.29675,
+      "longitude": 103.773148
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FStudy%20%26%20Discussion%20venues%2FCLB.jpg?alt=media&token=901aa7de-7188-4082-94ce-606cd5ec300e",
+    "color": "plum"
+  },
+  {
+    "name": "COM - Discussion Room 12",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77384
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FStudy%20%26%20Discussion%20venues%2FDR%2012.jpg?alt=media&token=4a0e63d5-2650-49d6-a4c2-a9bc71238d25",
+    "color": "plum"
+  },
+  {
+    "name": "Student Lounge 1(C4-02-10)",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29638889,
+      "longitude": 103.78055556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FStudy%20%26%20Discussion%20venues%2FStudent%20Lounge%201(C4-02-10).jpg?alt=media&token=f15599c0-7a1d-4b9b-9196-a61a8a25d625",
+    "color": "plum"
+  },
+  {
+    "name": "Student Lounge 1(C4-02-11)",
+    "address": "21 Lower Kent Ridge Rd, Singapore 119077",
+    "coords": {
+      "latitude": 1.29611111,
+      "longitude": 1.29611111
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FStudy%20%26%20Discussion%20venues%2FStudent%20Lounge%202(C4-02-11).jpg?alt=media&token=443c3d46-5e30-4788-9b59-4b34f815c445",
+    "color": "plum"
+  },
+  {
+    "name": "Central Square",
+    "address": "31 Lower Kent Ridge Rd, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FCentral%20Square.jpg?alt=media&token=6e0facd0-6400-40a9-859e-31623c8935e5",
+    "color": "red"
+  },
+  {
+    "name": "The Deck",
+    "address": "Computing Dr",
+    "coords": {
+      "latitude": 1.29443,
+      "longitude": 103.7728
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FDECK.jpg?alt=media&token=f3c8c74f-c45b-470b-a4f9-adf3db518089",
+    "color": "red"
+  },
+  {
+    "name": "Fine Food",
+    "address": "National University Of Singapore, 1 Create Way, Town Plaza, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FFine%20Food.jpg?alt=media&token=53c6afd9-9b0d-4972-841f-172b47bd8ff0",
+    "color": "red"
+  },
+  {
+    "name": "Flavours@Utown",
+    "address": "2 College Ave West, Singapore 138607",
+    "coords": {
+      "latitude": 1.39159,
+      "longitude": 103.89769
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FFlavours%40Utown.jpg?alt=media&token=40437e88-e799-482d-9197-4ff1ef1ab4d1",
+    "color": "red"
+  },
+  {
+    "name": "Hwang’s Korean Restaurant",
+    "address": "1 Create Way, #01-09 Create Tower, University Town @ NUS, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FHwang's%20Korean%20Restaurant.jpg?alt=media&token=1db61fed-515e-4017-8cbe-3cee8694bde3",
+    "color": "red"
+  },
+  {
+    "name": "OMO Store",
+    "address": "COM 1: 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FIMG_0809.jpg?alt=media&token=98ef7ac7-1365-4948-9f44-90aafe89169b",
+    "color": "tomato"
+  },
+  {
+    "name": "Maxx Coffee",
+    "address": "Maxx Coffee at NUS 12, Kent Ridge Crescent CLB-01-03, 119275",
+    "coords": {
+      "latitude": 1.296662,
+      "longitude": 103.773315
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FMAXX%20Coffee.jpg?alt=media&token=dc4a742a-fe66-4cb3-bb82-33d8cf491c9a",
+    "color": "red"
+  },
+  {
+    "name": "Sapore Italian Restaurant",
+    "address": "1 Create Way #01-06 NUS University Town, 138602",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FCentral%20Square.jpg?alt=media&token=6e0facd0-6400-40a9-859e-31623c8935e5",
+    "color": "red"
+  },
+  {
+    "name": "Tea Party",
+    "address": "2 Sports Drive 1, #03-03, 117561",
+    "coords": {
+      "latitude": 1.29958,
+      "longitude": 103.77538
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/The-Tea-Party-Edited-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "The Royal Bistro",
+    "address": "31 Lower Kent Ridge Rd, Singapore 119078",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FTea%20Party.jpg?alt=media&token=0f74801f-4fef-4cbb-b989-6456decd3b92",
+    "color": "red"
+  },
+  {
+    "name": "Cheers NUS Utown",
+    "address": "1 Create Way, #01-01, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.774117
+    },
+    "image_url": "https://scoop.coop/wp-content/uploads/2018/06/cheers.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "Udon Don Bar",
+    "address": "1 Create Way #01-12 Town Plaza, University Town, National University of Singapore, 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FUdon%20Don%20Bar.jpg?alt=media&token=c08960f1-c33c-4902-9d76-cbca49bf5a2f",
+    "color": "red"
+  },
+  {
+    "name": "SuperSnacks @ Utown",
+    "address": "2, #01-07 College Ave West, Stephen Riady Centre, 138607",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.77239
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FUtown%20Super%20Snacks.jpg?alt=media&token=83254a32-ba94-4d2f-acef-512ec0fe30f5",
+    "color": "red"
+  },
+  {
+    "name": "Subway",
+    "address": "31 Lower Kent Ridge Rd, #01-06 National University of Singapore, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.7758
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FYIH%20-%20Subway.jpg?alt=media&token=34b06517-b28e-4cb9-8413-273566f62302",
+    "color": "red"
+  },
+  {
+    "name": "YIH - 7-Eleven",
+    "address": "31 Lower Kent Ridge Rd, #01-03 Yusof Ishak House, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FF%26B%2FYIH-%20711.jpg?alt=media&token=dee2cf31-c6fa-4411-a62a-f330f54e2d4a",
+    "color": "tomato"
+  },
+  {
+    "name": "Engineering Cheers Unmanned Convenience Store",
+    "address": "Block E3 Level 6",
+    "coords": {
+      "latitude": 1.29862,
+      "longitude": 103.77264
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/03/MVIMG_20190125_123009-1024x576.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "University Hall - Spinelli Coffee Company",
+    "address": "21 Lower Kent Ridge Road, UHT-01, 05 National University of Singapore, University Hall, 119077",
+    "coords": {
+      "latitude": 1.29799,
+      "longitude": 103.77506
+    },
+    "image_url": "https://i.hungrygowhere.com/business/c9/58/11/00/spinelli-coffee-company.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Engineering - Spinelli Coffee Company",
+    "address": "EA, 9 Engineering Drive 1, Level 1 Faculty of Engineering, NUS, 117575",
+    "coords": {
+      "latitude": 1.30034,
+      "longitude": 103.7706
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/03/Spinelli-EA.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Engineering - Arise & Shine",
+    "address": "4 Engineering Drive 3, Singapore 117583",
+    "coords": {
+      "latitude": 1.29846,
+      "longitude": 103.772148
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/E4-Arise-n-Shine-2-1024x768.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Atempo",
+    "address": "3 Conservatory Drive, 117376",
+    "coords": {
+      "latitude": 1.30235,
+      "longitude": 103.77291
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/Atempo-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Bar Bar Black Sheep",
+    "address": "50 Kent Ridge Crescent, Ground Floor, Alice Lee Plaza, 119279",
+    "coords": {
+      "latitude": 1.30164,
+      "longitude": 103.77212
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/09/KR-front-1024x654.jpeg",
+    "color": "red"
+  },
+  {
+    "name": "Cafe Delight",
+    "address": "8 Kent Ridge Dr, Singapore 119246",
+    "coords": {
+      "latitude": 1.29545,
+      "longitude": 103.77011
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/DSC_0462-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Crave",
+    "address": "31 Lower Kent Ridge Rd, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/07/Crave-1024x768.jpg",
+    "color": "red"
+  },
+  {
+    "name": "D’Arts @ UCC",
+    "address": "50 Kent Ridge Cres, Singapore 119279",
+    "coords": {
+      "latitude": 1.30164,
+      "longitude": 103.772118
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/03/CafeUCC-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "E2 Halal Cafeteria",
+    "address": "9 Engineering Drive 1, National University of Singapore, Singapore 117575",
+    "coords": {
+      "latitude": 1.30034,
+      "longitude": 103.770599
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/03/E2-Cafe-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Eureka Taste",
+    "address": "14 Medical Dr, Singapore 117599",
+    "coords": {
+      "latitude": 1.29531,
+      "longitude": 103.781738
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/Eureka-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Foodclique",
+    "address": "23 Prince George's Park, Singapore 118422",
+    "coords": {
+      "latitude": 1.29078,
+      "longitude": 103.78208
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/Food-Clique-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Pgp Canteen",
+    "address": "27 Prince George's Park, Singapore 118425",
+    "coords": {
+      "latitude": 1.29085,
+      "longitude": 103.78123
+    },
+    "image_url": "https://lh3.googleusercontent.com/proxy/kdWWtQJAwvTPTes1UZjDyP2J1FINgkKRoqtqHKHnX2qGsBR2zOkg0Xj90XjtaefahS5dIbj9daFbMSMWT0eUOMU-Q89vprdtSYGe7d_UOuooB_tN9xPvJE7kKzACjEqqejrLfQwAhoBa0tGYHuFn_E7lzqJyJnr8EmjsbaI6Mw",
+    "color": "red"
+  },
+  {
+    "name": "NUS Science Canteen (Frontier)",
+    "address": "12 Science Drive 2, Singapore 117549",
+    "coords": {
+      "latitude": 1.29579,
+      "longitude": 103.779259
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/FP2-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Jewel Coffee",
+    "address": "10 Medical Dr, Singapore 117597",
+    "coords": {
+      "latitude": 1.29536,
+      "longitude": 103.78096
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/Jewel-Coffee-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Nami",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/07/i4-Nami-v2-1024x768.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Old Chang Kee @ Yusof Ishak House (NUS)",
+    "address": "31 Lower Kent Ridge Rd, Singapore 119078",
+    "coords": {
+      "latitude": 1.29878,
+      "longitude": 103.775803
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/OCK-1-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Engineering - Platypus Food Bar",
+    "address": "3 Engineering Drive 2, Singapore 117579",
+    "coords": {
+      "latitude": 1.29919,
+      "longitude": 103.7718
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/Platypus-E-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "SDE - Platypus Food Bar",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/IMG-20190813-WA0039-002-1024x768.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Reedz Cafe",
+    "address": "National University of Singapore, Shaw Foundation Alumni House 11 Kent Ridge Drive, 119244",
+    "coords": {
+      "latitude": 1.29279,
+      "longitude": 103.77077
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/Reedz-SFAH-1024x576.jpg",
+    "color": "red"
+  },
+  {
+    "name": "Science - Starbucks",
+    "address": "5 Science Drive 2, Singapore 117545",
+    "coords": {
+      "latitude": 1.29633,
+      "longitude": 103.77889
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2020/01/Starbucks-Science-1024x684.jpg",
+    "color": "red"
+  },
+  {
+    "name": "University Club",
+    "address": "11 Kent Ridge Dr, Singapore 119244",
+    "coords": {
+      "latitude": 1.29279,
+      "longitude": 103.770767
+    },
+    "image_url": "https://lh3.googleusercontent.com/proxy/o_073OLULNhEZyumTwdpCMGbnVBEeGySMTKcOahJkgMwBfoFY6wZBh-WN-G85SyDfkQulTmmCWgs8oW77uVmJFPJm-0ptRrZ4JTHx4_aivAtYuhxUriMAfoCCBqH2Z_nN-Eks-z6_PASGFm96-PyNSX4AI9n1emPPzlE",
+    "color": "red"
+  },
+  {
+    "name": "NUS Sports Hall Fitness Gym",
+    "address": "2 sports drive, Singapore 117561 Sports Drive 1, Singapore 117561",
+    "coords": {
+      "latitude": 1.29958,
+      "longitude": 103.77538
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FNUS%20Sports%20Hall%20Fitness%20Gym.jpg?alt=media&token=95211ca7-820f-4499-900c-41fcc1077753",
+    "color": "tan"
+  },
+  {
+    "name": "NUS Swimming Pool",
+    "address": "21 Lower Kent Ridge Road, 119077",
+    "coords": {
+      "latitude": 1.29799,
+      "longitude": 103.77506
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FNUS%20Swimming%20Pool%20.jpg?alt=media&token=e230f914-c654-4c3e-83a9-3c4988b60cd5",
+    "color": "tan"
+  },
+  {
+    "name": "Utown infinity pool",
+    "address": "2 College Ave West",
+    "coords": {
+      "latitude": 1.39159,
+      "longitude": 103.89769
+    },
+    "image_url": "https://leedsuniabroad.files.wordpress.com/2017/08/singapore.png?w=748",
+    "color": "tan"
+  },
+  {
+    "name": "University Sports Centre (USC)",
+    "address": "2 Sports Drive 1, National University of Singapore, Singapore 117561",
+    "coords": {
+      "latitude": 1.29958,
+      "longitude": 103.77538
+    },
+    "image_url": "https://uci.nus.edu.sg/suu/wp-content/uploads/sites/5/2018/11/20181031_100734.jpg",
+    "color": "green"
+  },
+  {
+    "name": "NUS Sports Hall",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29972222,
+      "longitude": 103.77527778
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FFitness%2FSports%20Hall.jpg?alt=media&token=cb26ba0c-1bc2-40c3-962d-fa258ad6ae0a",
+    "color": "tan"
+  },
+  {
+    "name": "NUS Tennis Court",
+    "address": "20 Lower Kent Ridge Road, 119080",
+    "coords": {
+      "latitude": 1.2991,
+      "longitude": 103.77638
+    },
+    "image_url": "https://liga.tennis/public/cache/images/6/2/8/4/ea9bd849ac9e04d9f3ae35d2a84041f5_1920_5760.jpg",
+    "color": "tan"
+  },
+  {
+    "name": "FairPrice Xpress NUS",
+    "address": " College Ave West, #01-05 Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30468,
+      "longitude": 103.77185
+    },
+    "image_url": "https://scoop.coop/wp-content/uploads/2018/06/fairprice-express.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "LT 12",
+    "address": "Kent Ridge Drive, 119246",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77138889
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2012.jpg?alt=media&token=4ad23b2e-5f59-4da3-a3d2-4893769d6f9e",
+    "color": "navy"
+  },
+  {
+    "name": "LT 14",
+    "address": "11 Computing Drive, 117416",
+    "coords": {
+      "latitude": 1.29583333,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2014.jpg?alt=media&token=319b5a24-4cf8-43ee-be54-2d5e35161946",
+    "color": "navy"
+  },
+  {
+    "name": "LT 9",
+    "address": "11 Arts Link, Singapore 117573",
+    "coords": {
+      "latitude": 1.29472,
+      "longitude": 103.77241
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%209.jpg?alt=media&token=0074e746-e8ab-4753-a01f-800b47192e94",
+    "color": "navy"
+  },
+  {
+    "name": "LT 10",
+    "address": "11 Arts Link, Singapore 117573",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77194444
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT10.jpg?alt=media&token=9c4294e3-0e36-4776-a318-15f2524bc24f",
+    "color": "navy"
+  },
+  {
+    "name": " LT 11",
+    "address": "Faculty of Social Arts and Science",
+    "coords": {
+      "latitude": 1.29583333,
+      "longitude": 103.77083333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT11.jpg?alt=media&token=246da452-6b46-432b-a5b2-3fdf202a38f6",
+    "color": "navy"
+  },
+  {
+    "name": "LT 15",
+    "address": " 11 Computing Drive, 117416",
+    "coords": {
+      "latitude": 1.29583333,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2015.jpg?alt=media&token=37e53e50-12b2-47b4-a20a-87351b16fd9f",
+    "color": "navy"
+  },
+  {
+    "name": "LT 16",
+    "address": "NUS Business",
+    "coords": {
+      "latitude": 1.29388889,
+      "longitude": 103.77444444
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT16.jpg?alt=media&token=de510e16-4a88-4e6f-9d4d-d5337a7004bc",
+    "color": "navy"
+  },
+  {
+    "name": "LT 17",
+    "address": "NUS Business",
+    "coords": {
+      "latitude": 1.29388889,
+      "longitude": 103.77416667
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT17.jpg?alt=media&token=4d79f735-da15-478c-9b5d-c9313ec16dee",
+    "color": "navy"
+  },
+  {
+    "name": "LT 19",
+    "address": "Computing Drive, National University Of Singapore, 119077",
+    "coords": {
+      "latitude": 1.29388889,
+      "longitude": 103.77444444
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT19.jpg?alt=media&token=5447e83f-b092-4b01-b831-80b5fa0199c7",
+    "color": "navy"
+  },
+  {
+    "name": "LT 50",
+    "address": "2 College Ave West, Singapore 138607",
+    "coords": {
+      "latitude": 1.305,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2050.jpg?alt=media&token=0a2982bb-0415-4ae8-80ff-3dc87c0d9f43",
+    "color": "navy"
+  },
+  {
+    "name": "LT 52",
+    "address": "2 College Ave West, Singapore 138607",
+    "coords": {
+      "latitude": 1.30472222,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2052.jpg?alt=media&token=a0baea8c-14a1-4691-ab3e-124613d00325",
+    "color": "navy"
+  },
+  {
+    "name": "LT 53",
+    "address": "2 College Ave West, Singapore 138607",
+    "coords": {
+      "latitude": 1.30472222,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FLecture%20Theatre%2FLT%2053.jpg?alt=media&token=f8e46ac8-00aa-4707-830e-f789f0f8503e",
+    "color": "navy"
+  },
+  {
+    "name": "NUS Bookhaven",
+    "address": "2 College Ave West, #01-07 University Town, NUS",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/SRC-BookHaven-1024x769.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "NUS CO-OP@Central Forum",
+    "address": "NUS Multi-Purpose Co-operative Society Limited 12 Kent Ridge Cresent Central Library Building, CLB01, 02, Singapore 119275",
+    "coords": {
+      "latitude": 1.29675,
+      "longitude": 103.77315
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FCOM%20-%20NUS%20Coop.jpg?alt=media&token=fc4d8950-ea98-4eb5-b240-c25292a90381",
+    "color": "tomato"
+  },
+  {
+    "name": "Goh Bros E-Print Pte Ltd",
+    "address": "31 Lower Kent Ridge Rd, Yusof Ishak House, Singapore 119078",
+    "coords": {
+      "latitude": 1.29888889,
+      "longitude": 103.775
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FGOH%20BROS%20-%20e-print%20pte%20ltd.jpg?alt=media&token=0c690405-9601-4023-ab74-66b7876e7391",
+    "color": "tomato"
+  },
+  {
+    "name": "Hair Destination",
+    "address": "UTown Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.305,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FHair%20Destination.jpg?alt=media&token=876f6543-2f50-40eb-859a-6ed6beb3f95d",
+    "color": "tomato"
+  },
+  {
+    "name": "NUS PRESS Bookstore and Office",
+    "address": "3 Arts Link AS3 #01-02, National University of Singapore, 117569",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77083333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2Fretail%2FNUS%20PRESS%20Bookshop%20%26%20Office.jpg?alt=media&token=0a67e695-1175-4de9-8e47-18772ebff43f",
+    "color": "tomato"
+  },
+  {
+    "name": "Octobox NUS",
+    "address": "UTown Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77083333
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/Octobox1-1024x684.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "Cold Storage NUS Kent Vale",
+    "address": "101, #01-01 Clementi Rd, Kent vale Estate, 129787",
+    "coords": {
+      "latitude": 1.3004,
+      "longitude": 103.76884
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/Cold-Storage-1-1024x684.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "Frank by OCBC",
+    "address": "No. 2 College Avenue West, NUS Stephen Riady Centre, #01-01, Singapore 138607",
+    "coords": {
+      "latitude": 1.30830,
+      "longitude": 103.77616
+    },
+    "image_url": "https://www.ocbc.com/assets/images/media/2019/frank%20store%201.jpgg",
+    "color": "tomato"
+  },
+  {
+    "name": "Nanyang Minimart",
+    "address": "31 Prince George's Park, Singapore 118427",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2018/05/PGP-Nanyang-Mart-1024x768.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "STA Travel",
+    "address": "2, #01-07 College Ave West, Inside BookHaven), University Town, Stephen Riady Centre, 138607",
+    "coords": {
+      "latitude": 1.27857,
+      "longitude": 103.8236
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/08/STA-1024x684.jpg",
+    "color": "tomato"
+  },
+  {
+    "name": "Office of Undergraduate Studies",
+    "address": "15 Computing Dr, Singapore 117418",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77388889
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FCOM-office%20of%20student%20life%20%26%20undergraduate%20studies.jpg?alt=media&token=00517629-601f-4579-b553-3a265348559c",
+    "color": "green"
+  },
+  {
+    "name": "CREATE Tower NUS",
+    "address": "1 Create Way, Singapore 138602",
+    "coords": {
+      "latitude": 1.30399,
+      "longitude": 103.77412
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FCREATE%20Building.jpg?alt=media&token=5eeefe77-317f-4ec1-a1a7-453928eea59f",
+    "color": "green"
+  },
+  {
+    "name": "Chua Thian Poh Hall",
+    "address": "16 College Ave E, Singapore 138592",
+    "coords": {
+      "latitude": 1.307,
+      "longitude": 103.77328
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FChua%20Thian%20Poh%20Hall.jpg?alt=media&token=0eee9d3e-8c35-4168-8eb0-86e2f6d19001",
+    "color": "green"
+  },
+  {
+    "name": "Dance Studio",
+    "address": "UTOWN Stephen Riady Centre",
+    "coords": {
+      "latitude": 1.30457,
+      "longitude": 103.77239
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FDance%20Studio.jpg?alt=media&token=b055a118-1023-4d05-99da-022d3ec82512",
+    "color": "green"
+  },
+  {
+    "name": "COM - Student Lounge",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29472222,
+      "longitude": 103.77388889
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FIMG_0802.jpg?alt=media&token=825522a8-35ce-4e16-847e-28c518b7fcb6",
+    "color": "green"
+  },
+  {
+    "name": "Makers@SoC",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29527778,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FMAKERS%40SOC.jpg?alt=media&token=2649a639-701b-4321-a2f4-f4d753af3fdd",
+    "color": "green"
+  },
+  {
+    "name": "PitStop@YIH",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.29888889,
+      "longitude": 103.775
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FPitstop%20%40%20YIH.jpg?alt=media&token=9a9f8aac-8ed2-43ef-8348-48c6dc5c2762",
+    "color": "green"
+  },
+  {
+    "name": "UTOWN Global Learning Room",
+    "address": "3 Research Link, Singapore 117602",
+    "coords": {
+      "latitude": 1.305,
+      "longitude": 103.77305556
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN%20Global%20Learning%20Room.jpg?alt=media&token=c431b37b-acd1-4ccc-a9e4-b476adf8462f",
+    "color": "green"
+  },
+  {
+    "name": "NUS School of Continuing and Lifelong Education (SCALE)",
+    "address": "University Town, Education Resource Centre, 8 College Avenue West, #02‐16, 138608",
+    "coords": {
+      "latitude": 1.30584,
+      "longitude": 103.77261
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN-%20School%20of%20continuing%20and%20lifelong%20education.jpg?alt=media&token=5ecabd13-f580-4cec-84fa-c2fce5e82ece",
+    "color": "green"
+  },
+  {
+    "name": "Global Learning Room",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.29388,
+      "longitude": 103.777161
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FOthers%2FUTOWN-%20Global%20Learning%20Room.jpg?alt=media&token=fcd14d98-322c-4fc3-9cba-9ab94b9250f5",
+    "color": "green"
+  },
+  {
+    "name": "COM - SR 2",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29527778,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FCOM-SR%202.jpg?alt=media&token=9032d435-d9ad-42a2-918d-0a93e96de665g",
+    "color": "purple"
+  },
+  {
+    "name": "COM - SR 6",
+    "address": "Computing 1, 13 Computing Drive, Singapore 117417",
+    "coords": {
+      "latitude": 1.29527778,
+      "longitude": 103.77333333
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FCOM-SR%206.jpg?alt=media&token=31ef3010-963a-4461-9c2f-32277732d266",
+    "color": "purple"
+  },
+  {
+    "name": "UTOWN - SR 10",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30555556,
+      "longitude": 103.7725
+    },
+    "image_url": "https://uci.nus.edu.sg/oca/wp-content/uploads/sites/9/2019/07/i4-Nami-v2-1024x768.jpg",
+    "color": "purple"
+  },
+  {
+    "name": "SR AS2-05-10",
+    "address": "5 Arts Link, 5 The, Block AS7, Level, Shaw Foundation Building, 117570",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77166667
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FSR%20AS2-05-10.jpg?alt=media&token=001bd63c-a204-4776-93d3-e168a76845a0",
+    "color": "purple"
+  },
+  {
+    "name": "SR AS2-05-11",
+    "address": "5 Arts Link, 5 The, Block AS7, Level, Shaw Foundation Building, 117570",
+    "coords": {
+      "latitude": 1.295,
+      "longitude": 103.77166667
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FSR%20AS2-05-11.jpg?alt=media&token=6dd9f381-620b-41bc-8474-ebd4886a67aa",
+    "color": "purple"
+  },
+  {
+    "name": "SR AS8-04-04",
+    "address": "10 Kent Ridge Cres, Singapore 119260",
+    "coords": {
+      "latitude": 1.2992,
+      "longitude": 103.77369
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FSR%20AS8-04-04.jpg?alt=media&token=374eaedf-3941-4091-820a-61964d20dc47",
+    "color": "purple"
+  },
+  {
+    "name": "UTOWN - SR 9",
+    "address": "2 College Ave West, Stephen Riady Centre, Singapore 138607",
+    "coords": {
+      "latitude": 1.30555556,
+      "longitude": 103.7725
+    },
+    "image_url": "https://firebasestorage.googleapis.com/v0/b/nusvigate-1fffe.appspot.com/o/MAPIMAGES%2FSeminar%20Rooms%2FUTOWN%20SR%209.jpg?alt=media&token=e3c68071-89ef-408b-b7f1-e6064723671b",
+    "color": "purple"
+  }
+]
