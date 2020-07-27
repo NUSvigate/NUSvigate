@@ -4,6 +4,7 @@ import { Alert } from 'react-native';
 export const UPDATE_EMAIL = 'UPDATE_EMAIL'
 export const UPDATE_PASSWORD = 'UPDATE_PASSWORD'
 export const UPDATE_NAME = 'UPDATE_NAME'
+export const UPDATE_AVATAR = 'UPDATE_AVATAR'
 export const LOGIN = 'LOGIN'
 export const SIGNUP = 'SIGNUP'
 
@@ -28,13 +29,33 @@ export const updateName = name => {
     }
 }
 
+export const updateAvatar = avatar => {
+    return {
+        type: UPDATE_AVATAR,
+        payload: avatar
+    }
+}
+
 export const login = () => {
     return async (dispatch, getState) => {
         try {
             const { email, password } = getState().user
             const response = await firebaseDb.auth().signInWithEmailAndPassword(email, password)
 
-            dispatch(getUser(response.user.uid))
+            response.user.emailVerified === true ?
+            dispatch(getUser(response.user.uid)) :
+            Alert.alert( "Please verify your email!", null,
+                [
+                    {
+                        text: "Okay"
+                    },
+                    {
+                        text: "Send verification email",
+                        onPress: () => response.user.sendEmailVerification()
+                    }
+                ],
+                { cancelable: false }
+            )
         } catch (e) {
             alert(e)
         }
@@ -59,13 +80,18 @@ export const getUser = uid => {
 export const signup = () => {
     return async (dispatch, getState) => {
         try {
-            const { email, password, name } = getState().user
+            const { email, password, name, avatar } = getState().user
+
             const response = await firebaseDb.auth().createUserWithEmailAndPassword(email, password)
+
             if (response.user.uid) {
+                response.user.sendEmailVerification();
+
                 const user = {
                     uid: response.user.uid,
                     email: email,
-                    name: name
+                    name: name,
+                    avatar: avatar
                 }
 
                 db.collection('users')
