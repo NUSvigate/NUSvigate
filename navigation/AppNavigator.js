@@ -4,8 +4,8 @@ import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator, HeaderBackButton } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Ionicons } from "@expo/vector-icons";
 
-import HomeScreenContainer from "../container/HomeScreenContainer";
 import SignUpContainer from "../container/SignUpContainer";
 import LoginContainer from "../container/LoginContainer";
 import MainMenuContainer from "../container/MainMenuContainer";
@@ -27,7 +27,30 @@ import FixesContainer from "../container/FixesContainer";
 const Tab = createBottomTabNavigator();
 function ServicesInformation() {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator
+            screenOptions={({ route }) => ({
+                tabBarIcon: ({ focused, color, size }) => {
+                    let iconName;
+
+                    if (route.name === 'Accommodation') {
+                        iconName = focused ? 'ios-home' : 'ios-home';
+                    } else if (route.name === 'Payment') {
+                        iconName = focused ? 'ios-card' : 'ios-card';
+                    } else if (route.name === 'Financial Aid') {
+                        iconName = focused ? 'md-cash' : 'md-cash';
+                    } else if (route.name === 'Utility') {
+                        iconName = focused ? 'ios-print' : 'ios-print';
+                    }
+
+                    return <Ionicons name={iconName} size={size} color={color} />;
+                },
+            })}
+
+            tabBarOptions={{
+                activeTintColor: 'orange',
+                inactiveTintColor: 'gray',
+            }}
+        >
             <Tab.Screen
                 name='Accommodation'
                 component={ServicesAccommodationContainer}
@@ -56,12 +79,7 @@ export default function AppNavigator() {
     return (
         <SafeAreaView style={styles.container}>
             <NavigationContainer>
-                <Stack.Navigator initialRouteName='Home'>
-                    <Stack.Screen
-                        name='Home'
-                        component={HomeScreenContainer}
-                    />
-
+                <Stack.Navigator initialRouteName='Login'>
                     <Stack.Screen
                         name='Sign Up'
                         component={SignUpContainer}
