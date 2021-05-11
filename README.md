@@ -1,6 +1,8 @@
 # NUSvigate
 The android application serves as an integrated platform that provides useful student-focused information that can enhance students’ experience in NUS. This application brings about great convenience  to students’ lives.
 
+Documentation on how to use the app can be found in: https://drive.google.com/drive/folders/1gbXCdWAH5FecxNNDLsQ0yu1gfYfR7Wsh?usp=sharing
+
 These are the main features of the application:
 
 ## **GPS Campus Maps**
