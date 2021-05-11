@@ -24,6 +24,6 @@ These are the main features of the application:
 
 4.1. Students can make a report with the image of the faulty facility or property into the application, the faculty it is found in, the exact location and a description of it.
 
-**Latest NUS news and events**
+## **Latest NUS news and events**
 5.1 Students can view the latest news and events held in school in the application. Student leaders who wish to post events can email to the NUSvigate team.
 
